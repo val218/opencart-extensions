@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="lv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saimnieciskās darbības žurnāls - OpenCart extension</title><meta name="description" content="Ieņēmumu un izdevumu uzskaites žurnāls, kas aizpildās no jūsu OpenCart pasūtījumiem."><style>:root{--bg:#f6f7f9;--card:#fff;--ink:#17202a;--mut:#5b6773;--line:#e2e7ec;--acc:#12805c;--acc2:#1f6fb8;--chip:#eef2f5}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1418;--card:#171e24;--ink:#e8edf1;--mut:#9aa7b2;--line:#26313a;--acc:#2fb487;--acc2:#5aa5e6;--chip:#1f2830}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--acc2)}.wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+nav{padding:18px 0;font-size:15px}nav a{text-decoration:none}
+header{padding:10px 0 20px}header h1{font-size:clamp(28px,5vw,42px);line-height:1.1;margin:0 0 10px;letter-spacing:-.5px}header p{font-size:19px;color:var(--mut);margin:0;max-width:780px}
+.buy{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}.price{font-size:22px;font-weight:700}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;padding:10px 16px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:var(--card)}.btn.main{background:var(--acc);border-color:var(--acc);color:#fff}
+h2{font-size:23px;margin:36px 0 12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+video{width:100%;border-radius:10px;display:block;background:#000}
+ul.f{margin:0;padding-left:22px}ul.f li{margin:6px 0}
+ol.s{margin:0;padding-left:22px}ol.s li{margin:6px 0}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.shots figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}.shots img{width:100%;display:block}.shots figcaption{padding:8px 12px;font-size:14px;color:var(--mut)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.chips span{background:var(--chip);border-radius:20px;padding:5px 12px;font-size:14px;font-weight:600}
+footer{margin:44px 0 0;padding:22px 0 40px;border-top:1px solid var(--line);color:var(--mut);font-size:14px}</style></head>
+<body><div class="wrap">
+<nav><a href="./">&larr; Visi paplašinājumi</a></nav>
+<header><h1>Saimnieciskās darbības žurnāls</h1><p>Ieņēmumu un izdevumu uzskaites žurnāls, kas aizpildās no jūsu OpenCart pasūtījumiem.</p>
+<div class="buy"><span class="price">$22</span><a class="btn main" href="https://www.opencart.com/index.php?route=marketplace/extension/info&amp;extension_id=50265">Pirkt OpenCart Marketplace</a><a class="btn" href="docs/LV_JOURNAL_GUIDE.md">Lietošanas pamācība</a></div>
+<div class="chips"><span>OpenCart 3 + 4 vienā pirkumā</span><span>Netiek mainīti OpenCart faili</span><span>12 mēnešu atjauninājumi un atbalsts</span></div></header>
+<h2>Demo video</h2><div class="card"><video controls muted playsinline preload="metadata" poster="assets/lv_journal_demo_poster.jpg"><source src="assets/lv_journal_demo.mp4" type="video/mp4"></video><p style="margin:8px 2px 0;color:var(--mut);font-size:14px">32 sekundes, bez skaņas, ar parakstiem</p></div>
+<h2>Ko tas dara</h2><div class="card"><ul class="f"><li>Apmaksātie pasūtījumi un atmaksas tiek ierakstīti žurnālā automātiski</li><li>Visas žurnāla ailes: kase, banka, citi maksājumi, ieņēmumi pa veidiem</li><li>PVN tiek atdalīts, citas valūtas pārrēķinātas uz EUR</li><li>Pievienojiet izdevumus un ieņēmumus, kas nenāca caur veikalu</li><li>Mēneša un gada kopsummas, sākuma un beigu atlikumi</li><li>1. vai 2. pielikums, drukāšana (PDF) un CSV eksports grāmatvedim</li><li>Sagatavo žurnālu - neiesniedz deklarācijas VID</li></ul></div>
+
+<h2>Ekrānuzņēmumi</h2><div class="shots"><figure><img src="assets/lv_journal_1.png" alt="Gada pārskats" loading="lazy"><figcaption>Gada pārskats</figcaption></figure><figure><img src="assets/lv_journal_2.png" alt="Žurnāls pa mēnešiem" loading="lazy"><figcaption>Žurnāls pa mēnešiem</figcaption></figure><figure><img src="assets/lv_journal_3.png" alt="Jauni izdevumi" loading="lazy"><figcaption>Jauni izdevumi</figcaption></figure><figure><img src="assets/lv_journal_4.png" alt="Iestatījumi" loading="lazy"><figcaption>Iestatījumi</figcaption></figure></div>
+<footer><p>Jautājumi: <a href="https://github.com/val218/opencart-extensions/issues">atveriet issue</a>. OpenCart ir OpenCart Limited preču zīme; šie paplašinājumi ir neatkarīgi.</p></footer>
+</div></body></html>
