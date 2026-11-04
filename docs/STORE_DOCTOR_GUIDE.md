@@ -1,6 +1,6 @@
 # Store Doctor for OpenCart: User Guide
 
-A health check for your shop. Store Doctor looks at security, extensions, errors, SEO and content, speed and server, and OpenCart 4 readiness. It explains every problem in plain words, tells you how to fix it, and fixes the safe ones for you with one click. Every fix can be undone.
+A health check for your shop. Store Doctor looks at security, extensions, errors, SEO and content, speed and server, EU rules for online shops, and OpenCart 4 readiness. It explains every problem in plain words, tells you how to fix it, and fixes the safe ones for you with one click. Every fix can be undone.
 
 **The check only reads.** It never changes your shop. Changes happen only when you click a fix button, and each one is recorded in **Fix history**.
 
@@ -31,6 +31,7 @@ Open it from **System > Store Doctor**. The first check runs straight away and t
 | **Errors** | The error log read for you. The same error is grouped together and shown with how often it happens, when it last happened, which extension or modification it comes from, and what it means |
 | **SEO & content** | Missing meta titles and descriptions (per language); duplicate SEO keywords; products without an SEO keyword, category or image; image files that are missing on the server; enabled products that cost 0 |
 | **Speed & server** | PHP extensions OpenCart needs; OPcache; memory limit; database size and largest tables; old MyISAM tables; thousands of expired sessions; unfinished checkouts; oversized uploaded images; size of the resized-image cache |
+| **EU rules** (new in 1.1.0) | The rules EU online shops must follow, each with what it asks for and how to meet it: the **withdrawal button** (required since 19 June 2026), the **lowest price in the last 30 days** next to sale prices (Omnibus), **product safety details** on product pages (GPSR, including products with no manufacturer set), an **accessibility statement** page (European Accessibility Act; micro-businesses are exempt), **cookie consent** when tracking scripts such as Google Analytics or a Facebook pixel are found, and the **withdrawal waiver for downloads** when you sell digital products. If your store address is in the EU, missing items count as problems; outside the EU they show as "Good to know", because they only apply to sales to EU consumers. Store Doctor recognises the usual extensions and pages; if you handle a rule another way, click **Ignore this**. It is a checklist, not legal advice |
 | **OpenCart 4 readiness** | On OpenCart 3: whether your theme, added extensions and modifications need OpenCart 4 versions, whether PHP is new enough, how much data there is to move, and an overall upgrade size (Small, Medium or Large). Click **Has an OpenCart 4 version** next to an extension you've already checked (or your own, which you'll move yourself) and it moves to the ready list. On OpenCart 4: whether you're on the newest release |
 
 Each finding is marked **Serious**, **Look at this**, **Good to know** or **OK**. The **health score** (0-100) goes down for serious problems and things to look at. OpenCart 4 readiness never lowers the score.
