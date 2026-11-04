@@ -1,4 +1,4 @@
-# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.2.0)
+# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.3.0)
 
 Ieņēmumu un izdevumu uzskaites žurnāls vienkāršā ieraksta sistēmā, aizpildīts automātiski no apmaksātiem pasūtījumiem. Formāts atbilst MK noteikumiem Nr. 322 par grāmatvedību vienkāršā ieraksta sistēmā (likumi.lv/ta/id/332883): **1. pielikums** (IIN maksātāji, 24 ailes), **2. pielikums** (MUN maksātāji, 15 ailes) un **3. pielikums** (izdevumu precizēšanas reģistrs).
 
@@ -15,8 +15,17 @@ Modulis atrodams izvēlnē **Reports > Saimn. darbības žurnāls**.
 
 **Atjaunināšana no 1.0:** OpenCart 3 - vienkārši augšupielādējiet jauno zip. OpenCart 4 - Extensions > Installer, pie vecās versijas spiediet Uninstall (tikai faili, ne modulis), tad augšupielādējiet un instalējiet jauno. Žurnāla dati paliek; esošie importētie ieraksti tiek aizsargāti automātiski.
 
+## Uzņēmuma profils (cilne "Uzņēmums")
+1. Ievadiet reģistrācijas numuru un spiediet **Atrast**. Latvijas uzņēmumam nosaukums, juridiskā forma, adrese un PVN statuss tiek paņemti no Uzņēmumu reģistra un VID PVN maksātāju reģistra (atvērtie dati data.gov.lv); citas ES valsts uzņēmumam PVN numurs tiek pārbaudīts ES VIES. Fiziskas personas kods reģistros nav - datus ievadiet paši.
+2. Visu var labot. Nozari (NACE 2.1) izvēlieties paši - publiskajos datos tās nav. Atzīmējiet darbības pazīmes (pakalpojumi no ārvalstīm, pakalpojumi ES uzņēmumiem, preces no ES, darbinieki, dalībnieki - fiziskas personas).
+3. **Saglabāt un pielāgot automātiski.** Modulis nosaka: grāmatvedības sistēmu (vienkāršais ieraksts līdz 300 000 € apgrozījumam fiziskām personām un IK; SIA - vienmēr divkāršais), nodokļu režīmu (IIN, MUN 25% vai UIN 20% / 15% alternatīva no 2026, ja dalībnieki ir tikai fiziskas personas), PVN pienākumus (50 000 € slieksnis, OSS 10 000 €, preču iegāde no ES 10 000 €, reģistrācija neatkarīgi no apgrozījuma pakalpojumiem no ārvalstīm un ES uzņēmumiem, būvniecības pazīme), lauksaimniecībai - ieņēmumi 12. ailē, un vai jāsagatavo gada pārskats. Pie katra secinājuma ir saite uz avotu.
+4. Rekvizīti rēķinos, PVN, žurnāla forma un ieņēmumu aile pielāgojas profilam; iestatījumos šos laukus vairs nevar mainīt, lai tie nerunātu pretī profilam.
+5. Reizi 7 dienās modulis pārbauda PVN statusu VID reģistrā. Ja tas mainījies, pārskatā un cilnē "Uzņēmums" parādās brīdinājums ar pogu "Pieņemt reģistra statusu". Ja reģistrs nav sasniedzams, pārbaude atkārtojas pēc dienas.
+
+Veikala serverim jāvar sasniegt `data.gov.lv` un `ec.europa.eu` (HTTPS). Ja hostings to bloķē, profilu var aizpildīt ar roku.
+
 ## Pirmie soļi
-1. **Iestatījumi:** izvēlieties IIN vai MUN maksātāju (vai "SIA / kapitālsabiedrība" - skat. zemāk), ievadiet vārdu/nosaukumu, kodu, adresi, PVN Nr., IBAN un banku (tie parādās uz rēķiniem).
+1. **Uzņēmums** (skat. augstāk) vai **Iestatījumi:** izvēlieties IIN vai MUN maksātāju (vai "SIA / kapitālsabiedrība" - skat. zemāk), ievadiet vārdu/nosaukumu, kodu, adresi, PVN Nr., IBAN un banku (tie parādās uz rēķiniem).
 2. **Statusi:** atzīmējiet, kuri pasūtījumu statusi nozīmē "nauda saņemta" un kuri - atmaksu.
 3. **Maksājumu veidi:** katram maksājuma veidam izvēlieties aili - Kase, Maksājumu konts (banka) vai Citi (PayPal, Stripe, kartes) - un, ja vajag, komisijas maksu (% + fiksēta summa).
 4. **PVN maksātājs:** ja "Jā", PVN tiek ierakstīts 17. ailē, apgrozījumā - summa bez PVN. Ja "Nē", uz rēķina tiek rakstīts "Nav PVN maksātājs."
