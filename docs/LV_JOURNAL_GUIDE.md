@@ -1,4 +1,4 @@
-# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.1.0)
+# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.2.0)
 
 Ieņēmumu un izdevumu uzskaites žurnāls vienkāršā ieraksta sistēmā, aizpildīts automātiski no apmaksātiem pasūtījumiem. Formāts atbilst MK noteikumiem Nr. 322 par grāmatvedību vienkāršā ieraksta sistēmā (likumi.lv/ta/id/332883): **1. pielikums** (IIN maksātāji, 24 ailes), **2. pielikums** (MUN maksātāji, 15 ailes) un **3. pielikums** (izdevumu precizēšanas reģistrs).
 
@@ -34,6 +34,17 @@ Modulis atrodams izvēlnē **Reports > Saimn. darbības žurnāls**.
 - **Manuāls rēķins:** cilne "Rēķini" → Jauns rēķins. Kad nauda saņemta - "Apmaksāts", un ieņēmumi tiek ierakstīti žurnālā.
 - **Atmaksa** (↩ pie pasūtījuma ieraksta) - pilna vai daļēja; ja pasūtījumam ir rēķins, automātiski tiek izrakstīts kredītrēķins, kas atsaucas uz to.
 - Rēķinu var atvērt, izdrukāt/saglabāt PDF un nosūtīt pircējam.
+
+## CMR pavadzīmes (preču kustība)
+Cilne **CMR** - starptautisko autopārvadājumu pavadzīmes:
+- **Izejošās** (jūsu sūtītās preces): "CMR no rēķina / pasūtījuma" aizpilda nosūtītāju (jūsu rekvizīti), saņēmēju un piegādes adresi, preces un bruto svaru no produktiem. Numurs tiek piešķirts automātiski (`CMR-2026-00001`, sērija maināma iestatījumos), vai ierakstiet iespiestas CMR veidlapas numuru. Pie katra rēķina ir arī poga 🚚.
+- **Ienākošās** (jums piegādātās preces): ievadiet numuru no dokumenta, pievienojiet skenējumu vai foto un piesaistiet žurnāla ierakstam ar piegādātāja rēķinu.
+- Vienu CMR var piesaistīt vairākiem rēķiniem vai ierakstiem un otrādi; rēķinu sarakstā un ieraksta detaļās redzamas piesaistītās CMR.
+- **Drukāt / PDF:** visas 24 ailes (latviski / angliski), izejošām - 3 eksemplāri (nosūtītājam, saņēmējam, pārvadātājam).
+- **Krava saņemta (✓):** kad atgriežas parakstītais eksemplārs, atzīmējiet 24. ailes datumu un pievienojiet skenējumu. Pārbaude atgādina par izejošām CMR, kurām pēc 14 dienām nav atzīmēta saņemšana.
+- CMR netiek dzēstas - kļūdainu anulē ar iemeslu; labojumi redzami izmaiņu vēsturē. CMR ir arī JSON eksportā.
+
+CMR ir pārvadājuma dokuments, nevis grāmatvedības ieraksts - tas nemaina žurnāla summas.
 
 ## Izdevumi no čeka vai rēķina foto
 **Žurnāls → 📷 Izdevumi no čeka / rēķina:** nofotografējiet vai izvēlieties JPG/PNG/PDF. Teksts tiek nolasīts pārlūkā šajā datorā - foto netiek sūtīts uz internetu un nav vajadzīga AI atslēga. Aizpildās datums, dokumenta Nr., piegādātājs, summa un PVN; pārbaudiet un saglabājiet. Fails tiek saglabāts kā attaisnojuma dokuments 📎.
