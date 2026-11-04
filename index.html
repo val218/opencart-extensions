@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenCart Extensions by val218</title>
+<meta name="description" content="Six OpenCart 3 and 4 extensions: AI Writer, Shop Inbox, Store Doctor, Real Visitors, UK Accounting Export and a Latvian income and expense journal.">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#17202a;--mut:#5b6773;--line:#e2e7ec;--acc:#12805c;--acc2:#1f6fb8;--chip:#eef2f5}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1418;--card:#171e24;--ink:#e8edf1;--mut:#9aa7b2;--line:#26313a;--acc:#2fb487;--acc2:#5aa5e6;--chip:#1f2830}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--acc2)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+header{padding:56px 0 28px}
+header h1{font-size:clamp(30px,5vw,46px);line-height:1.1;margin:0 0 12px;letter-spacing:-.5px}
+header p{font-size:19px;color:var(--mut);max-width:760px;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chips span{background:var(--chip);border-radius:20px;padding:5px 12px;font-size:14px;font-weight:600}
+h2{font-size:24px;margin:40px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;display:block;aspect-ratio:710/380;object-fit:cover;border-bottom:1px solid var(--line)}
+.card .b{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{margin:0;font-size:19px}
+.card p{margin:0;color:var(--mut);font-size:15px}
+.card .price{font-weight:700}
+.card .links{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px;padding-top:8px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:14px;padding:8px 14px;border-radius:8px;border:1px solid var(--line);color:var(--ink);background:var(--card)}
+.btn.main{background:var(--acc);border-color:var(--acc);color:#fff}
+.demos{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px}.demo{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.demo h3{margin:0 0 4px}
+.demo p{margin:0 0 12px;color:var(--mut)}
+video{width:100%;border-radius:10px;display:block;background:#000}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.shots figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.shots img{width:100%;display:block}
+.shots figcaption{padding:8px 12px;font-size:14px;color:var(--mut)}
+.why{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.why div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.why b{display:block;margin-bottom:4px}
+.why span{color:var(--mut);font-size:15px}
+footer{margin:48px 0 0;padding:24px 0 40px;border-top:1px solid var(--line);color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>OpenCart extensions that save shop owners time</h1>
+<p>Six extensions for OpenCart 3.0.x and 4.0.x / 4.1.x, sold on the OpenCart Marketplace. Each comes with both versions in one purchase, a plain-language guide, and 12 months of updates and support.</p>
+<div class="chips"><span>OpenCart 3 + 4 in one purchase</span><span>No core files changed</span><span>Tested on 3.0.4.0, 4.0.2.3, 4.1.0.3, 4.1.0.4</span><span>Works with Journal and other themes</span></div>
+</header>
+
+<h2>See them in action</h2>
+<div class="demos">
+<div class="demo">
+<h3>Store Doctor - 49 second demo</h3>
+<p>Health score, problems explained in plain words, one-click fixes with undo, and the error log traced to the extension causing it.</p>
+<video controls muted playsinline preload="none" poster="assets/store_doctor_demo_poster.jpg"><source src="assets/store_doctor_demo.mp4" type="video/mp4"></video>
+</div>
+<div class="demo">
+<h3>Real Visitors - 42 second demo</h3>
+<p>Who is on your shop right now, why each visit counts as a person or a bot, and how much of your traffic is really bots.</p>
+<video controls muted playsinline preload="none" poster="assets/real_visitors_demo_poster.jpg"><source src="assets/real_visitors_demo.mp4" type="video/mp4"></video>
+</div>
+</div>
+
+<h2>The extensions</h2>
+<div class="grid">
+<div class="card"><img src="assets/ai_writer_banner.png" alt="AI Writer banner" loading="lazy"><div class="b">
+<h3>AI Writer</h3><p>Product and category descriptions, SEO meta, translations and Journal blog articles written with Claude, OpenAI or Gemini - reviewed before saving, undo any time.</p><div class="price">$29</div>
+<div class="links"><a class="btn main" href="https://www.opencart.com/index.php?route=marketplace/extension/info&amp;extension_id=50262">OpenCart Marketplace</a><a class="btn" href="docs/AI_WRITER_GUIDE.md">Guide</a></div></div></div>
+
+<div class="card"><img src="assets/store_doctor_banner.png" alt="Store Doctor banner" loading="lazy"><div class="b">
+<h3>Store Doctor</h3><p>A health check for your shop: security, extensions, errors, SEO, speed and OpenCart 4 readiness. Safe problems fixed in one click, every fix undoable.</p><div class="price">$29</div>
+<div class="links"><a class="btn main" href="https://www.opencart.com/index.php?route=marketplace/extension/info&amp;extension_id=50275">OpenCart Marketplace</a><a class="btn" href="docs/STORE_DOCTOR_GUIDE.md">Guide</a></div></div></div>
+
+<div class="card"><img src="assets/real_visitors_banner.png" alt="Real Visitors banner" loading="lazy"><div class="b">
+<h3>Real Visitors</h3><p>Every visit sorted into real visitors, customers, not sure yet, likely bots, known bots and you - with the reason for each. Privacy settings built in.</p><div class="price">$24</div>
+<div class="links"><a class="btn main" href="https://www.opencart.com/index.php?route=marketplace/extension/info&amp;extension_id=50274">OpenCart Marketplace</a><a class="btn" href="docs/REAL_VISITORS_GUIDE.md">Guide</a></div></div></div>
+
+<div class="card"><img src="assets/shop_inbox_banner.png" alt="Shop Inbox banner" loading="lazy"><div class="b">
+<h3>Shop Inbox</h3><p>Your shop email inside OpenCart, with each customer's orders beside their message, reply templates and follow-up reminders.</p><div class="price">$39</div>
+<div class="links"><a class="btn main" href="https://www.opencart.com/index.php?route=marketplace/extension/info&amp;extension_id=50263">OpenCart Marketplace</a><a class="btn" href="docs/SHOP_INBOX_GUIDE.md">Guide</a></div></div></div>
+
+<div class="card"><img src="assets/uk_export_banner.png" alt="UK Accounting Export banner" loading="lazy"><div class="b">
+<h3>UK Accounting Export</h3><p>Paid orders become a sales ledger, expenses go in HMRC categories, and MTD quarterly figures are ready for your accounting software.</p><div class="price">$24</div>
+<div class="links"><a class="btn main" href="https://www.opencart.com/index.php?route=marketplace/extension/info&amp;extension_id=50264">OpenCart Marketplace</a><a class="btn" href="docs/UK_EXPORT_GUIDE.md">Guide</a></div></div></div>
+
+<div class="card"><img src="assets/lv_journal_banner.png" alt="Latvian income and expense journal banner" loading="lazy"><div class="b">
+<h3>LV Income &amp; Expense Journal</h3><p>Ieņēmumu un izdevumu uzskaites žurnāls, aizpildīts no apmaksātajiem pasūtījumiem: PVN, EUR, mēneša kopsummas, drukāšana un CSV.</p><div class="price">$22</div>
+<div class="links"><a class="btn main" href="https://www.opencart.com/index.php?route=marketplace/extension/info&amp;extension_id=50265">OpenCart Marketplace</a><a class="btn" href="docs/LV_JOURNAL_GUIDE.md">Guide</a></div></div></div>
+</div>
+
+<h2>Screenshots</h2>
+<div class="shots">
+<figure><img src="assets/store_doctor_screen.png" alt="Store Doctor overview" loading="lazy"><figcaption>Store Doctor: what needs attention, most serious first</figcaption></figure>
+<figure><img src="assets/real_visitors_screen.png" alt="Real Visitors over 30 days" loading="lazy"><figcaption>Real Visitors: people vs bots over 30 days</figcaption></figure>
+<figure><img src="assets/ai_writer_screen.png" alt="AI Writer overview" loading="lazy"><figcaption>AI Writer: write and translate in bulk</figcaption></figure>
+<figure><img src="assets/shop_inbox_screen.png" alt="Shop Inbox" loading="lazy"><figcaption>Shop Inbox: orders beside every email</figcaption></figure>
+<figure><img src="assets/uk_export_screen.png" alt="UK Accounting Export" loading="lazy"><figcaption>UK Accounting Export: quarterly overview</figcaption></figure>
+<figure><img src="assets/lv_journal_screen.png" alt="LV journal" loading="lazy"><figcaption>LV žurnāls: mēneša pārskats</figcaption></figure>
+</div>
+
+<h2>Why these extensions</h2>
+<div class="why">
+<div><b>Both versions included</b><span>One purchase covers OpenCart 3.0.x and 4.0.x / 4.1.x, so upgrading later costs nothing extra.</span></div>
+<div><b>Nothing hidden in your files</b><span>No core or theme files are changed. Everything hooks in with OpenCart events and uninstalls cleanly.</span></div>
+<div><b>Plain words</b><span>Every screen and guide is written for shop owners, not developers.</span></div>
+<div><b>Support</b><span>Questions and bug reports go to the Issues page of this project. Include your OpenCart and PHP version.</span></div>
+</div>
+
+<footer>
+<p>Support: <a href="https://github.com/val218/opencart-extensions/issues">open an issue</a> (please don't post passwords or customer details). Made by val218. OpenCart is a trademark of OpenCart Limited; these extensions are independent and not made by OpenCart Limited.</p>
+</footer>
+</div>
+</body>
+</html>
