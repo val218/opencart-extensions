@@ -4,7 +4,7 @@ Your shop's email inside the OpenCart admin. Every conversation shows the custom
 
 ## Requirements
 - OpenCart 3.0.x or 4.0.x / 4.1.x (tested on 3.0.4.0, 4.0.2.3, 4.1.0.3, 4.1.0.4), PHP with OpenSSL and mbstring
-- A mailbox with IMAP and SMTP access (cPanel/hosting mail, Gmail/Google Workspace, Microsoft 365, Zoho…)
+- A mailbox with IMAP and SMTP access and a password login: hosting email (cPanel, DirectAdmin, Plesk), Gmail/Google Workspace (app password), Zoho and most others. Microsoft 365 and Outlook.com work only if the mailbox still allows IMAP with a password - many business accounts no longer do.
 - No PHP IMAP extension needed (it was removed from PHP 8.4); works on shared hosting
 
 ## Install
@@ -14,7 +14,7 @@ An **Inbox** item appears in the admin menu, with a count of unread conversation
 
 ## Connect a mailbox
 Mail accounts → choose your provider (fills in servers and ports) → email, user name, password → **Connect**. The login is checked before saving and the Sent folder is found automatically.
-Gmail and Microsoft 365 need an **app password** (turn on 2-step verification first). Passwords are encrypted (AES-256) with a key kept in OpenCart's storage folder.
+Gmail and Google Workspace need an **app password** (turn on 2-step verification first). If the server's certificate is issued for another name (common on shared hosting), Shop Inbox tells you; enter that name as the server. Passwords are encrypted (AES-256) with a key kept in OpenCart's storage folder.
 
 ## Daily use
 - **Inbox views:** Inbox, Needs reply, Follow-ups due, Waiting for customer, All reminders, Done, Newsletters & automatic, All mail. Search covers subject, names, addresses and message text.
