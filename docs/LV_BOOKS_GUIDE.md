@@ -1,4 +1,4 @@
-# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.4.0)
+# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.5.0)
 
 Divkāršā ieraksta grāmatvedība Latvijas SIA tieši OpenCart administrācijā. Uztur jūsu SIA grāmatas gatavas grāmatvedim - **neaizstāj grāmatvedi**. Mazām SIA gada pārskatu parasti paraksta grāmatvedis vai valde pēc grāmatveža pārbaudes.
 
@@ -85,9 +85,26 @@ Redzama tikai lietotājiem ar pilnu piekļuvi modulim.
 - **Darbinieki** – vārds, personas kods, statuss (darba ņēmējs 34,09 %, vecuma pensijas saņēmējs 30,02 %, izdienas vai valsts speciālās pensijas saņēmējs 31,70 %), mēneša alga, stundas, algas nodokļa grāmatiņa, apgādājamie un papildu atvieglojums. Darbinieku VID reģistrējiet paši ("Ziņas par darba ņēmējiem") ne vēlāk kā stundu pirms darba sākuma.
 - **Algu aprēķins** – 2026. gada likmes: darba ņēmēja VSAOI 10,5 %, darba devēja 23,59 %; IIN 25,5 % no (bruto − darba ņēmēja VSAOI − neapliekamais minimums 550 € − 250 € par katru apgādājamo − papildu atvieglojums), ja grāmatiņa iesniegta šim darba devējam (pensionāram minimums 500 €); uzņēmējdarbības riska nodeva 0,36 € par darbinieku. Mēnesi var aprēķināt vienu reizi; lai pārrēķinātu, aprēķinu anulē ar iemeslu (ja alga vēl nav izmaksāta un periods nav slēgts).
 - **Grāmatojums** – mēneša beigās ar kopsummām: Dt 7210 bruto alga, Dt 7220 darba devēja VSAOI, Dt 7590 riska nodeva / Kt 5610 izmaksājamā alga, Kt 5710 nodokļi (vienotais nodokļu konts). Virsgrāmatā nav darbinieku vārdu un individuālo algu.
+- **Atvaļinājuma nauda** – vidējā dienas izpeļņa (pēdējo 6 mēnešu alga par nostrādāto laiku / nostrādātās dienas, Darba likuma 75. pants; ne mazāk kā minimālā alga) × atvaļinājuma darba dienas. **Slimības nauda (A lapa)** – 1. diena netiek apmaksāta, 2.–3. diena 75 %, 4.–9. diena 80 % no vidējās izpeļņas, tikai darba dienas (svētku dienas ievērotas); no 10. dienas maksā valsts (B lapa). Alga par nostrādāto laiku tiek samazināta proporcionāli.
 - **Izmaksa** – žurnāla ieraksts Dt 5610 / Kt nauda ar kopsummu. **Algas lapiņas** – drukai vai PDF.
 - **Darba devēja ziņojums** – dati EDS ziņojumam (personas kods, vārds, darba ienākumi, obligātās iemaksas, IIN, stundas) pa statusiem un CSV. Iesniedz līdz nākamā mēneša 17. datumam, nodokļus maksā līdz 23. datumam; termiņš redzams arī "Termiņi un atgādinājumi".
 - Likmes ir modulī pa gadiem; gadam, kuram likmes vēl nav ievadītas, aprēķins netiek veikts (atjauniniet moduli).
+
+## E-rēķini (strukturētie rēķini)
+- Pie katra rēķina poga **XML**: strukturētais e-rēķins Peppol BIS Billing 3.0 / EN 16931 (UBL 2.1) formātā. Valsts un pašvaldību iestādēm tie ir obligāti jau tagad, PVN maksātājiem savā starpā – no 2028. gada 1. janvāra.
+- E-rēķinu var sagatavot tikai pircējam uzņēmumam (ar reģistrācijas numuru vai PVN numuru); patērētājiem tas nav vajadzīgs. Pircēja valsti un atsauci (līgums, pasūtījums) var norādīt rēķinā.
+- Failu nosūtiet caur valsts e-adresi vai e-rēķinu pakalpojuma sniedzēju (modulis pats nesūta).
+- Faili pārbaudīti ar oficiālajiem CEN EN 16931 un Peppol noteikumiem (bez kļūdām).
+
+## Dati grāmatvedim
+Iestatījumi → "Dati grāmatvedim": viens ZIP fails gadam (ar jūsu paroli) – virsgrāmata, apgrozījuma pārskats, kontu plāns, PVN reģistri, piegādātāju rēķini, algas (CSV), rēķini (HTML), e-rēķini (XML) un pievienotie čeki (līdz 60 MB). CSV faili atveras Excel un importējami Jumis, Horizon, Zalktis, 1C ar to CSV/Excel importu.
+
+## Ko darīt tagad un iestatīšanas vednis
+- Pārskata augšā – saraksts "Ko darīt tagad": nokavētie un tuvākie termiņi, neapmaksātie rēķini, pārbaužu problēmas, neaprēķinātās algas, nokavētie piegādātāju rēķini, sākuma atlikumi, periods, ko var slēgt, un datu kopija.
+- Pirmajā reizē atveras **iestatīšanas vednis** (uzņēmums no reģistriem, konts, atgādinājumi); vēlāk – Iestatījumi → "Iestatīšanas vednis".
+
+## Naudas plūsmas pārskats
+Cilnē "Pārskati": tiešā metode – katra naudas kustība sadalīta pēc otras puses konta: pamatdarbība, ieguldīšana (pamatlīdzekļi, izsniegtie aizdevumi), finansēšana (kapitāls, saņemtie aizdevumi, dividendes); sākuma atlikums + plūsma = beigu atlikums tiek pārbaudīts. Mikro un mazajām sabiedrībām gada pārskatā tas nav obligāts.
 
 ## Konta izraksts → ieraksti
 Augšupielādējot konta izrakstu (camt.053), rindas, kuru nav žurnālā, var ierakstīt uzreiz: modulis piedāvā izrakstītā rēķina apmaksu, piegādātāja rēķina apmaksu vai jaunu ierakstu pēc noteikuma (piem. „teksts satur Komisija → 7510”). Katru izraksta rindu var ierakstīt tikai vienu reizi.
@@ -106,7 +123,7 @@ Augšupielādējot konta izrakstu (camt.053), rindas, kuru nav žurnālā, var i
 - Cilnē **Nodokļi**: mēneša aprēķins, XML VID EDS (DokUIENv5), termiņu kalendārs (UIN 20. datums, PVN, IIN no dividendēm, gada pārskats) ar atzīmi "iesniegts".
 
 ## Šajā versijā nav
-- Darba devēja ziņojuma XML failu VID EDS (ziņojuma dati ir tabulā un CSV - ievadiet tos EDS); ziņas par darba ņēmējiem (reģistrācija VID); atvaļinājuma naudu, slimības naudu un vidējās izpeļņas aprēķinu; valdes locekļu atlīdzību ar minimālo iemaksu objektu; darbiniekus, kuri sociāli apdrošināti citā ES valstī (33 % virs 8775 EUR mēnesī).
+- Darba devēja ziņojuma XML failu VID EDS (ziņojuma dati ir tabulā un CSV - ievadiet tos EDS); ziņas par darba ņēmējiem (reģistrācija VID); summētā darba laika (stundu) vidējās izpeļņas; nelaimes gadījuma darbā slimības naudas (10 dienas); valdes locekļu atlīdzību ar minimālo iemaksu objektu; darbiniekus, kuri sociāli apdrošināti citā ES valstī (33 % virs 8775 EUR mēnesī).
 - Valūtas kursu starpību (pircēju un piegādātāju parādi ārvalstu valūtā) - ievadiet ar manuālu grāmatojumu (6320 / 7570).
 - Importa PVN īpašās kārtības (aprēķins deklarācijā ar VID atļauju) un IOSS.
 

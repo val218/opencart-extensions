@@ -1,4 +1,4 @@
-# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.5.0)
+# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.6.0)
 
 Ieņēmumu un izdevumu uzskaites žurnāls vienkāršā ieraksta sistēmā, aizpildīts automātiski no apmaksātiem pasūtījumiem. Formāts atbilst MK noteikumiem Nr. 322 par grāmatvedību vienkāršā ieraksta sistēmā (likumi.lv/ta/id/332883): **1. pielikums** (IIN maksātāji, 24 ailes), **2. pielikums** (MUN maksātāji, 15 ailes) un **3. pielikums** (izdevumu precizēšanas reģistrs).
 
@@ -71,6 +71,19 @@ Cilnē **Pārskats** – tuvākie deklarāciju un maksājumu termiņi, ar atzīm
 - **PVN deklarācija** (PVN maksātājiem) – līdz nākamā mēneša 20. datumam, samaksa līdz 23. datumam; periods (mēnesis vai ceturksnis) – iestatījumos.
 
 **Atgādinājumi pa e-pastu** (Iestatījumi → Termiņi un atgādinājumi): norādītās dienas pirms termiņa un vēlreiz, ja termiņš nokavēts. Tiek izmantoti veikala e-pasta iestatījumi; adrese – norādītā, citādi uzņēmuma, citādi veikala e-pasts. Pārbaude notiek, atverot moduli vai kad mainās pasūtījuma statuss, ne biežāk kā reizi dienā. Kad deklarācija iesniegta, atzīmējiet to – atgādinājumi par to beidzas.
+
+## E-rēķini (strukturētie rēķini)
+- Pie katra rēķina poga **XML**: strukturētais e-rēķins Peppol BIS Billing 3.0 / EN 16931 (UBL 2.1) formātā. Valsts un pašvaldību iestādēm tie ir obligāti jau tagad, PVN maksātājiem savā starpā – no 2028. gada 1. janvāra.
+- E-rēķinu var sagatavot tikai pircējam uzņēmumam (ar reģistrācijas numuru vai PVN numuru); patērētājiem tas nav vajadzīgs. Pircēja valsti un atsauci (līgums, pasūtījums) var norādīt rēķinā.
+- Failu nosūtiet caur valsts e-adresi vai e-rēķinu pakalpojuma sniedzēju (modulis pats nesūta).
+- Faili pārbaudīti ar oficiālajiem CEN EN 16931 un Peppol noteikumiem (bez kļūdām).
+
+## Dati grāmatvedim
+Iestatījumi → "Dati grāmatvedim": viens ZIP fails gadam (ar jūsu paroli) – žurnāls un grāmatojumi (CSV), rēķini (HTML), e-rēķini (XML) un pievienotie čeki (līdz 60 MB). CSV faili atveras Excel un importējami Jumis, Horizon, Zalktis, 1C ar to CSV/Excel importu.
+
+## Ko darīt tagad un iestatīšanas vednis
+- Pārskata augšā – saraksts "Ko darīt tagad": nokavētie un tuvākie termiņi, neapmaksātie rēķini, pārbaužu problēmas, periods, ko var slēgt, un datu kopija.
+- Pirmajā reizē atveras **iestatīšanas vednis** (uzņēmums no reģistriem, konts, atgādinājumi); vēlāk – Iestatījumi → "Iestatīšanas vednis".
 
 ## Drošība
 - **Slēgtie periodi** (Iestatījumi): pēc deklarācijas iesniegšanas slēdziet periodu – šī perioda ierakstus un rēķinus vairs nevar pievienot, labot vai anulēt; automātiski ieraksti nonāk pirmajā atvērtajā dienā. Atvērt periodu var tikai ar iemeslu un savu OpenCart paroli.
