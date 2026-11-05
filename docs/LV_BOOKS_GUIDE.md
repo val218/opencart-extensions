@@ -1,4 +1,4 @@
-# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.5.0)
+# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.5.1)
 
 Divkāršā ieraksta grāmatvedība Latvijas SIA tieši OpenCart administrācijā. Uztur jūsu SIA grāmatas gatavas grāmatvedim - **neaizstāj grāmatvedi**. Mazām SIA gada pārskatu parasti paraksta grāmatvedis vai valde pēc grāmatveža pārbaudes.
 
@@ -108,6 +108,9 @@ Cilnē "Pārskati": tiešā metode – katra naudas kustība sadalīta pēc otra
 
 ## Konta izraksts → ieraksti
 Augšupielādējot konta izrakstu (camt.053), rindas, kuru nav žurnālā, var ierakstīt uzreiz: modulis piedāvā izrakstītā rēķina apmaksu, piegādātāja rēķina apmaksu vai jaunu ierakstu pēc noteikuma (piem. „teksts satur Komisija → 7510”). Katru izraksta rindu var ierakstīt tikai vienu reizi.
+
+## Programmatūras licence
+Iestatījumi → "Programmatūras licence": ievadiet OpenCart Marketplace pasūtījuma numuru un datumu un izdrukājiet **lietošanas tiesību apliecinājumu** (MK noteikumi Nr. 877, 56.1. apakšpunkts) ar atbilstību 57. punkta prasībām. Pievienojiet to grāmatvedības organizācijas dokumentiem (60.1. apakšpunkts) kopā ar pirkuma apliecinājumu. Licences līgums ir modulī (LICENCE.txt) un apliecinājumā; apliecinājums ir arī ZIP failā "Dati grāmatvedim".
 
 ## Drošība
 - **Slēgtie periodi** (Iestatījumi): pēc deklarāciju iesniegšanas slēdziet periodu – tad šī perioda ierakstus, rēķinus, grāmatojumus, PVN veidus un pamatlīdzekļus nevar pievienot, labot vai anulēt. Automātiski ieraksti (pasūtījumi) nonāk pirmajā atvērtajā dienā. Atvērt periodu var tikai ar iemeslu un savu OpenCart paroli.

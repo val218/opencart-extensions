@@ -62,6 +62,7 @@ Modulis uztur SIA grāmatvedību kārtībā un gatavu nodošanai grāmatvedim. T
 [list]
 [*][b]Slēgtie periodi[/b] – pēc deklarāciju iesniegšanas periodu slēdz; atvērt var tikai ar iemeslu un OpenCart paroli.
 [*][b]Piekļuve katram administratoram[/b]: pilna, tikai skatīt vai nav piekļuves.
+[*][b]Programmatūras lietošanas tiesību apliecinājums[/b] (MK noteikumi Nr. 877, 56.–59. punkts) un licences līgums – izdrukai grāmatvedības organizācijas dokumentiem.
 [*][b]Dati grāmatvedim[/b] – viens ZIP fails gadam: virsgrāmata, apgrozījuma pārskats, kontu plāns, PVN reģistri, piegādātāju rēķini, algas (CSV – atveras Excel, importējami Jumis, Horizon, Zalktis, 1C), rēķini, e-rēķini un čeku attēli. Pilna datu kopija JSON formātā.
 [/list]
 

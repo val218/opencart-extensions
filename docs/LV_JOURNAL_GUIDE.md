@@ -1,4 +1,4 @@
-# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.6.0)
+# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.6.1)
 
 Ieņēmumu un izdevumu uzskaites žurnāls vienkāršā ieraksta sistēmā, aizpildīts automātiski no apmaksātiem pasūtījumiem. Formāts atbilst MK noteikumiem Nr. 322 par grāmatvedību vienkāršā ieraksta sistēmā (likumi.lv/ta/id/332883): **1. pielikums** (IIN maksātāji, 24 ailes), **2. pielikums** (MUN maksātāji, 15 ailes) un **3. pielikums** (izdevumu precizēšanas reģistrs).
 
@@ -84,6 +84,9 @@ Iestatījumi → "Dati grāmatvedim": viens ZIP fails gadam (ar jūsu paroli) �
 ## Ko darīt tagad un iestatīšanas vednis
 - Pārskata augšā – saraksts "Ko darīt tagad": nokavētie un tuvākie termiņi, neapmaksātie rēķini, pārbaužu problēmas, periods, ko var slēgt, un datu kopija.
 - Pirmajā reizē atveras **iestatīšanas vednis** (uzņēmums no reģistriem, konts, atgādinājumi); vēlāk – Iestatījumi → "Iestatīšanas vednis".
+
+## Programmatūras licence
+Iestatījumi → "Programmatūras licence": ievadiet OpenCart Marketplace pasūtījuma numuru un datumu un izdrukājiet **lietošanas tiesību apliecinājumu** (MK noteikumi Nr. 877, 56.1. apakšpunkts) ar atbilstību 57. punkta prasībām. Pievienojiet to grāmatvedības organizācijas dokumentiem (60.1. apakšpunkts) kopā ar pirkuma apliecinājumu. Licences līgums ir modulī (LICENCE.txt) un apliecinājumā; apliecinājums ir arī ZIP failā "Dati grāmatvedim".
 
 ## Drošība
 - **Slēgtie periodi** (Iestatījumi): pēc deklarācijas iesniegšanas slēdziet periodu – šī perioda ierakstus un rēķinus vairs nevar pievienot, labot vai anulēt; automātiski ieraksti nonāk pirmajā atvērtajā dienā. Atvērt periodu var tikai ar iemeslu un savu OpenCart paroli.

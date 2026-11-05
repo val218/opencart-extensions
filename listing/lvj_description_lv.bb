@@ -43,6 +43,7 @@ Apmaksātie pasūtījumi automātiski kļūst par žurnāla ierakstiem, tiklīdz
 [list]
 [*][b]Slēgtie periodi[/b] (atvērt tikai ar iemeslu un OpenCart paroli), [b]piekļuve katram administratoram[/b] (pilna, tikai skatīt, nav), pilna datu kopija.
 [*]Termiņu kalendārs un e-pasta atgādinājumi: gada ienākumu deklarācija, VSAOI, MUN, PVN.
+[*][b]Programmatūras lietošanas tiesību apliecinājums[/b] (MK noteikumi Nr. 877, 56.–59. punkts) un licences līgums – izdrukai grāmatvedības organizācijas dokumentiem.
 [/list]
 
 [b]Pārbaudes[/b]
