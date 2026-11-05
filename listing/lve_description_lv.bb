@@ -37,7 +37,7 @@ Ja vajag arī grāmatvedību, e-rēķini jau ir iekļauti moduļos „SIA grāma
 [/list]
 
 [b]English[/b]
-Structured e-invoices for Latvian OpenCart shops: invoices and credit notes with continuous numbering (from orders, automatically or by hand, or typed in) and the Peppol BIS Billing 3.0 / EN 16931 UBL XML for every invoice to a business, checked against the official CEN and Peppol rules; a ZIP of a period's e-invoices for the accountant; company data from the Latvian registers. Required for public bodies now and between VAT payers in Latvia from 1 January 2028. Interface in Latvian, English and Russian.
+Structured e-invoices for Latvian OpenCart shops. Invoices and credit notes with continuous numbering, made from orders automatically, by hand, or typed in. Peppol BIS Billing 3.0 / EN 16931 UBL XML for every invoice to a business, checked against the official CEN and Peppol rules. A ZIP with all e-invoices of a period for the accountant. Company data comes from the Latvian registers. Required for public bodies now and between VAT payers in Latvia from 1 January 2028. Interface in Latvian, English and Russian.
 
 [b]Svarīgi[/b]
 Modulis palīdz izrakstīt rēķinus un e-rēķinus, bet nav juridisks vai nodokļu padoms. Par rēķinu saturu atbild izrakstītājs. Lietošanas instrukcija: https://val218.github.io/opencart-extensions/docs/LV_EINVOICE_GUIDE.md
