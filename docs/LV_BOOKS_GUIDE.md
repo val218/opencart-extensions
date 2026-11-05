@@ -1,4 +1,4 @@
-# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.5.1)
+# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.5.2)
 
 Divkāršā ieraksta grāmatvedība Latvijas SIA tieši OpenCart administrācijā. Uztur jūsu SIA grāmatas gatavas grāmatvedim - **neaizstāj grāmatvedi**. Mazām SIA gada pārskatu parasti paraksta grāmatvedis vai valde pēc grāmatveža pārbaudes.
 
