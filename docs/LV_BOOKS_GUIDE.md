@@ -1,4 +1,4 @@
-# Lastadia Grāmatvedība (SIA un mikrosabiedrībām) - lietošanas instrukcija (v1.5.3)
+# Lastadia Grāmatvedība (SIA un mikrosabiedrībām) - lietošanas instrukcija (v1.5.4)
 
 Divkāršā ieraksta grāmatvedība Latvijas SIA tieši OpenCart administrācijā. Uztur jūsu SIA grāmatas gatavas grāmatvedim - **neaizstāj grāmatvedi**. Mazām SIA gada pārskatu parasti paraksta grāmatvedis vai valde pēc grāmatveža pārbaudes.
 

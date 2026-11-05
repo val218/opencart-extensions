@@ -14,7 +14,7 @@ Seven extensions for OpenCart 3.0.x and 4.0.x / 4.1.x, sold on the OpenCart Mark
 | [UK Accounting Export](https://val218.github.io/opencart-extensions/uk-export.html) | Sales ledger, HMRC expense categories and MTD quarterly figures | [Guide](docs/UK_EXPORT_GUIDE.md) |
 | [Lastadia Žurnāls](https://val218.github.io/opencart-extensions/lv-journal.html) | Latvian income and expense journal for sole traders (IK) and self-employed, from paid orders, with e-invoices | [Guide](docs/LV_JOURNAL_GUIDE.md) |
 | [Lastadia Grāmatvedība](https://val218.github.io/opencart-extensions/lv-books.html) | Double-entry bookkeeping for Latvian SIA and micro companies: VAT, payroll, corporate income tax, annual report | [Guide](docs/LV_BOOKS_GUIDE.md) |
-| [Lastadia E-rēķini](https://val218.github.io/opencart-extensions/lv-einvoice.html) | Invoices and Peppol / EN 16931 e-invoices for Latvian shops | [Guide](docs/LV_EINVOICE_GUIDE.md) |
+| [Lastadia E-invoices](https://val218.github.io/opencart-extensions/lv-einvoice.html) | Invoices and Peppol / EN 16931 e-invoices for shops in Latvia, Estonia and Lithuania | [Guide](docs/LV_EINVOICE_GUIDE.md) |
 
 ## Support
 
