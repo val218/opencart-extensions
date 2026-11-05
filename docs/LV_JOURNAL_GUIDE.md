@@ -1,4 +1,4 @@
-# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.4.0)
+# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.5.0)
 
 Ieņēmumu un izdevumu uzskaites žurnāls vienkāršā ieraksta sistēmā, aizpildīts automātiski no apmaksātiem pasūtījumiem. Formāts atbilst MK noteikumiem Nr. 322 par grāmatvedību vienkāršā ieraksta sistēmā (likumi.lv/ta/id/332883): **1. pielikums** (IIN maksātāji, 24 ailes), **2. pielikums** (MUN maksātāji, 15 ailes) un **3. pielikums** (izdevumu precizēšanas reģistrs).
 
@@ -71,6 +71,12 @@ Cilnē **Pārskats** – tuvākie deklarāciju un maksājumu termiņi, ar atzīm
 - **PVN deklarācija** (PVN maksātājiem) – līdz nākamā mēneša 20. datumam, samaksa līdz 23. datumam; periods (mēnesis vai ceturksnis) – iestatījumos.
 
 **Atgādinājumi pa e-pastu** (Iestatījumi → Termiņi un atgādinājumi): norādītās dienas pirms termiņa un vēlreiz, ja termiņš nokavēts. Tiek izmantoti veikala e-pasta iestatījumi; adrese – norādītā, citādi uzņēmuma, citādi veikala e-pasts. Pārbaude notiek, atverot moduli vai kad mainās pasūtījuma statuss, ne biežāk kā reizi dienā. Kad deklarācija iesniegta, atzīmējiet to – atgādinājumi par to beidzas.
+
+## Drošība
+- **Slēgtie periodi** (Iestatījumi): pēc deklarācijas iesniegšanas slēdziet periodu – šī perioda ierakstus un rēķinus vairs nevar pievienot, labot vai anulēt; automātiski ieraksti nonāk pirmajā atvērtajā dienā. Atvērt periodu var tikai ar iemeslu un savu OpenCart paroli.
+- **Piekļuve** (Iestatījumi): katram administratoram – pilna piekļuve, tikai skatīt vai nav piekļuves. Izmaiņām vajag jūsu paroli.
+- **Datu kopija** (Iestatījumi): visu moduļa datu kopija JSON failā (ar paroli).
+- **Konta izraksts → ieraksti**: izraksta rindas, kuru nav žurnālā, var ierakstīt uzreiz (rēķina apmaksa vai jauns ieraksts pēc noteikuma); katru rindu tikai vienu reizi.
 
 ## Pārbaudes (cilne "Pārskats")
 - vai visi apmaksātie pasūtījumi ir žurnālā un katrai atmaksai ir atmaksas ieraksts;

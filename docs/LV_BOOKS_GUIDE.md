@@ -1,4 +1,4 @@
-# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.2.0)
+# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.3.0)
 
 Divkāršā ieraksta grāmatvedība Latvijas SIA tieši OpenCart administrācijā. Uztur jūsu SIA grāmatas gatavas grāmatvedim - **neaizstāj grāmatvedi**. Mazām SIA gada pārskatu parasti paraksta grāmatvedis vai valde pēc grāmatveža pārbaudes.
 
@@ -72,6 +72,23 @@ Pirms XML faila lejupielādes modulis to pārbauda un parāda „Viss kārtībā
 ## Termiņi un atgādinājumi
 Termiņi redzami cilnē **Pārskats** un **Nodokļi**. Atgādinājumi pa e-pastu – Iestatījumi → Termiņi un atgādinājumi (dienas pirms termiņa, adrese); par katru termiņu tiek atgādināts vienreiz un vēlreiz, ja tas nokavēts. Kad deklarācija iesniegta, atzīmējiet to („Iesniegts”).
 
+## Norēķini (cilne "Norēķini")
+- **Piegādātāju rēķini** – ievadiet rēķinu saņemšanas dienā: rindas ar kontu (izmaksas, krājumi ar precēm, pamatlīdzekļi), PVN un PVN veidu. Grāmatojums: Dt izmaksas / krājumi + Dt 2371 / Kt 5310; PVN deklarācijā – rēķina mēnesī. Viena piegādātāja rēķina numuru nevar ievadīt divreiz.
+- **Apmaksa** – „Apmaksāt”: žurnāla ieraksts Dt 5310 / Kt nauda, arī daļēji. Apmaksātu rēķinu nevar labot vai anulēt (vispirms anulējiet maksājumu).
+- **Neapmaksātie rēķini** – pircēju un piegādātāju parādi uz datumu ar novecošanu (termiņš nav pienācis, 1–30, 31–60, 61–90, > 90 dienas) un salīdzinājumu ar kontiem 2310 un 5310.
+- **Salīdzināšanas akts** – visi darījumi ar partneri kontos 2310 un 5310 un atlikums, drukai un nosūtīšanai partnerim.
+- **Atkārtoti grāmatojumi** – noma, abonementi u. c. katru mēnesi norādītajā dienā; katrs mēnesis tikai vienu reizi, slēgtā periodā – nekad.
+
+## Konta izraksts → ieraksti
+Augšupielādējot konta izrakstu (camt.053), rindas, kuru nav žurnālā, var ierakstīt uzreiz: modulis piedāvā izrakstītā rēķina apmaksu, piegādātāja rēķina apmaksu vai jaunu ierakstu pēc noteikuma (piem. „teksts satur Komisija → 7510”). Katru izraksta rindu var ierakstīt tikai vienu reizi.
+
+## Drošība
+- **Slēgtie periodi** (Iestatījumi): pēc deklarāciju iesniegšanas slēdziet periodu – tad šī perioda ierakstus, rēķinus, grāmatojumus, PVN veidus un pamatlīdzekļus nevar pievienot, labot vai anulēt. Automātiski ieraksti (pasūtījumi) nonāk pirmajā atvērtajā dienā. Atvērt periodu var tikai ar iemeslu un savu OpenCart paroli.
+- **Piekļuve** (Iestatījumi): katram administratoram – pilna piekļuve, tikai skatīt vai nav piekļuves (papildus OpenCart lietotāju grupām). Izmaiņām vajag jūsu paroli; jūs vienmēr saglabājat pilnu piekļuvi.
+- **Parole vajadzīga arī** jaunai API atslēgai un pilnai datu kopijai.
+- **Datu kopija** (Iestatījumi): visu moduļa tabulu un iestatījumu kopija vienā JSON failā (bez slepenām atslēgām). Pievienotie dokumentu faili glabājas veikala storage mapē – tos dublējiet kopā ar veikalu.
+- **PVN deklarācijas salīdzinājums**: cilnē PVN redzams, vai deklarācija sakrīt ar PVN kontiem grāmatvedībā.
+
 ## UIN
 - 20% no sadalītās peļņas: bāze = summa / 0,8 (1000 € dividendes → UIN 250 €).
 - No 2026. gada, ja visi dalībnieki ir fiziskas personas: 15% (bāze = summa / 0,85) un 6% IIN ieturējums (1000 € → UIN 176 €, IIN 60 €, dalībnieks saņem 940 €). VID veidlapā vēl nav atsevišķas rindas: 1. un 4. rinda kā parasti, starpība starp 20% un 15% 25. rindā, skaidrojums 25.1 rindā ("UIN samazinājums par dividendēm saskaņā ar Uzņēmumu ienākuma nodokļa likuma 4.2 pantu"). IIN 6% maksā līdz nākamā mēneša 23. datumam un deklarē par katru personu.
@@ -80,7 +97,6 @@ Termiņi redzami cilnē **Pārskats** un **Nodokļi**. Atgādinājumi pa e-pastu
 
 ## Šajā versijā nav
 - Algu un darba devēja VSAOI aprēķina (ierakstiet algu kopsummas no algu programmas kā grāmatojumu).
-- Piegādātāju rēķinu uzkrāšanas līdz apmaksai (izdevumi tiek grāmatoti apmaksā; uzkrājumus var ievadīt ar manuālu grāmatojumu).
 - Valūtas kursu starpību (pircēju un piegādātāju parādi ārvalstu valūtā) - ievadiet ar manuālu grāmatojumu (6320 / 7570).
 - Importa PVN īpašās kārtības (aprēķins deklarācijā ar VID atļauju) un IOSS.
 
