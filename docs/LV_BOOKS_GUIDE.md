@@ -5,9 +5,9 @@ Divkāršā ieraksta grāmatvedība Latvijas SIA tieši OpenCart administrācij�
 Modulis ir atsevišķs produkts, veidots uz "Saimnieciskās darbības žurnāla" pamata: tam ir savas tabulas (`lv_books_*`), un abus moduļus var turēt vienā veikalā.
 
 ## Uzstādīšana
-- **OpenCart 3:** Extensions > Installer → `lv_books_oc3.ocmod.zip` → Extensions > Extensions > Modules → "LV grāmatvedība SIA (divkāršais ieraksts)" → Install.
+- **OpenCart 3:** Extensions > Installer → `lv_books_oc3.ocmod.zip` → Extensions > Extensions > Modules → "Lastadia Grāmatvedība – SIA un mikrosabiedrībām" → Install.
 - **OpenCart 4:** Extensions > Installer → `lv_books.ocmod.zip` (nemainiet faila nosaukumu) → Install → Extensions > Extensions > Modules → Install.
-- Izvēlnē: **Reports > SIA grāmatvedība**.
+- Izvēlnē: **Reports > Lastadia Grāmatvedība**.
 
 ## Pirmie soļi
 1. **Uzņēmums:** ievadiet SIA reģistrācijas numuru → "Atrast" (Uzņēmumu reģistrs, VID PVN reģistrs). SIA vienmēr kārto divkāršo ierakstu un maksā UIN; MUN SIA nav pieejams.

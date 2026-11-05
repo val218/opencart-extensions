@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="lv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lastadia E-rēķini – strukturētie e-rēķini - OpenCart extension</title><meta name="description" content="Rēķini un strukturētie e-rēķini (Peppol BIS Billing 3.0 / EN 16931) Latvijas OpenCart veikaliem, pārbaudīti ar oficiālajiem CEN un Peppol noteikumiem."><style>:root{--bg:#f6f7f9;--card:#fff;--ink:#17202a;--mut:#5b6773;--line:#e2e7ec;--acc:#12805c;--acc2:#1f6fb8;--chip:#eef2f5}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1418;--card:#171e24;--ink:#e8edf1;--mut:#9aa7b2;--line:#26313a;--acc:#2fb487;--acc2:#5aa5e6;--chip:#1f2830}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--acc2)}.wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+nav{padding:18px 0;font-size:15px}nav a{text-decoration:none}
+header{padding:10px 0 20px}header h1{font-size:clamp(28px,5vw,42px);line-height:1.1;margin:0 0 10px;letter-spacing:-.5px}header p{font-size:19px;color:var(--mut);margin:0;max-width:780px}
+.buy{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}.price{font-size:22px;font-weight:700}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;padding:10px 16px;border-radius:9px;border:1px solid var(--line);color:var(--ink);background:var(--card)}.btn.main{background:var(--acc);border-color:var(--acc);color:#fff}
+h2{font-size:23px;margin:36px 0 12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+video{width:100%;border-radius:10px;display:block;background:#000}
+ul.f{margin:0;padding-left:22px}ul.f li{margin:6px 0}
+ol.s{margin:0;padding-left:22px}ol.s li{margin:6px 0}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.shots figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}.shots img{width:100%;display:block}.shots figcaption{padding:8px 12px;font-size:14px;color:var(--mut)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.chips span{background:var(--chip);border-radius:20px;padding:5px 12px;font-size:14px;font-weight:600}
+footer{margin:44px 0 0;padding:22px 0 40px;border-top:1px solid var(--line);color:var(--mut);font-size:14px}</style></head>
+<body><div class="wrap">
+<nav><a href="./">&larr; Visi paplašinājumi</a></nav>
+<header><h1>Lastadia E-rēķini</h1><p>Rēķini un strukturētie e-rēķini (Peppol BIS Billing 3.0 / EN 16931) Latvijas OpenCart veikaliem – arī tad, ja grāmatvedību kārto grāmatvedis savā programmā. Valsts un pašvaldību iestādēm obligāti jau tagad, PVN maksātājiem savā starpā – no 2028. gada 1. janvāra.</p>
+<div class="buy"><span class="price">$59</span><a class="btn main" href="https://www.opencart.com/index.php?route=marketplace/extension/info&amp;extension_id=50285">Pirkt OpenCart Marketplace</a><a class="btn" href="docs/LV_EINVOICE_GUIDE.md">Lietošanas pamācība</a></div>
+<div class="chips"><span>OpenCart 3 + 4 vienā pirkumā</span><span>Netiek mainīti OpenCart faili</span><span>12 mēnešu atjauninājumi un atbalsts</span></div></header>
+
+<h2>Ko tas dara</h2><div class="card"><ul class="f"><li>Rēķini un kredītrēķini ar nepārtrauktu numerāciju, izdruka un PDF, nosūtīšana pircējam pa e-pastu</li><li>Rēķins pasūtījumam ar pircēja uzņēmuma rekvizītiem; pēc izvēles automātiski katram apmaksātam pasūtījumam</li><li>Rēķins bez pasūtījuma (pakalpojumi, B2B) ar rindām, mērvienībām un PVN likmēm; PVN 0 % iemesls: apgrieztā maksāšana, ES preces, eksports, atbrīvots</li><li>Katram rēķinam uzņēmumam – XML fails Peppol BIS Billing 3.0 / EN 16931 (UBL 2.1), pārbaudīts ar oficiālajiem CEN un Peppol noteikumiem</li><li>E-rēķini par periodu vienā ZIP failā ar sarakstu – grāmatvedim vai e-rēķinu pakalpojumam</li><li>Uzņēmuma dati no Uzņēmumu reģistra, VID PVN maksātāju reģistra un VIES</li><li>Izrakstītu rēķinu nevar mainīt vai dzēst – kļūdu labo ar kredītrēķinu; izmaiņu vēsture un piekļuve katram administratoram</li><li>Failu nosūtiet caur valsts e-adresi vai e-rēķinu pakalpojumu – modulis pats nesūta</li><li>Vajag arī grāmatvedību? E-rēķini jau ir iekļauti <a href="lv-books.html">Lastadia Grāmatvedība</a> un <a href="lv-journal.html">Lastadia Žurnāls</a></li></ul></div>
+
+<h2>Ekrānuzņēmumi</h2><div class="shots"><figure><img src="assets/lv_einvoice_1.jpg" alt="Pārskats: e-rēķini šomēnes un ZIP par periodu" loading="lazy"><figcaption>Pārskats: e-rēķini šomēnes un ZIP par periodu</figcaption></figure><figure><img src="assets/lv_einvoice_2.jpg" alt="Rēķini ar e-rēķina XML pogu" loading="lazy"><figcaption>Rēķini ar e-rēķina XML pogu</figcaption></figure><figure><img src="assets/lv_einvoice_3.jpg" alt="Jauns rēķins ar PVN 0 % iemeslu" loading="lazy"><figcaption>Jauns rēķins ar PVN 0 % iemeslu</figcaption></figure><figure><img src="assets/lv_einvoice_4.jpg" alt="Iestatījumi" loading="lazy"><figcaption>Iestatījumi</figcaption></figure><figure><img src="assets/lv_einvoice_5.jpg" alt="E-rēķina XML: 0 kļūdu (CEN EN 16931, Peppol)" loading="lazy"><figcaption>E-rēķina XML: 0 kļūdu (CEN EN 16931, Peppol)</figcaption></figure></div>
+<footer><p>Jautājumi: <a href="https://github.com/val218/opencart-extensions/issues">atveriet issue</a>. OpenCart ir OpenCart Limited preču zīme; šie paplašinājumi ir neatkarīgi.</p></footer>
+</div></body></html>

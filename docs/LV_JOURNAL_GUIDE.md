@@ -9,9 +9,9 @@ Moduļa valoda: latviešu, angļu vai krievu (Iestatījumi → Moduļa valoda). 
 - Veikalā jābūt valūtai EUR
 
 ## Uzstādīšana
-**OpenCart 3:** Extensions > Installer → augšupielādējiet `lv_journal_oc3.ocmod.zip` → Extensions > Extensions > Modules → "Saimnieciskās darbības žurnāls (LV)" → Install.
+**OpenCart 3:** Extensions > Installer → augšupielādējiet `lv_journal_oc3.ocmod.zip` → Extensions > Extensions > Modules → "Lastadia Žurnāls – IK un pašnodarbinātajiem" → Install.
 **OpenCart 4:** Extensions > Installer → augšupielādējiet `lv_journal.ocmod.zip` (nemainiet faila nosaukumu) → Install → Extensions > Extensions > Modules → Install.
-Modulis atrodams izvēlnē **Reports > Saimn. darbības žurnāls**.
+Modulis atrodams izvēlnē **Reports > Lastadia Žurnāls**.
 
 **Atjaunināšana no 1.0:** OpenCart 3 - vienkārši augšupielādējiet jauno zip. OpenCart 4 - Extensions > Installer, pie vecās versijas spiediet Uninstall (tikai faili, ne modulis), tad augšupielādējiet un instalējiet jauno. Žurnāla dati paliek; esošie importētie ieraksti tiek aizsargāti automātiski.
 
