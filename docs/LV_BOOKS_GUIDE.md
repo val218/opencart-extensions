@@ -1,4 +1,4 @@
-# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.1.0)
+# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.2.0)
 
 Divkāršā ieraksta grāmatvedība Latvijas SIA tieši OpenCart administrācijā. Uztur jūsu SIA grāmatas gatavas grāmatvedim - **neaizstāj grāmatvedi**. Mazām SIA gada pārskatu parasti paraksta grāmatvedis vai valde pēc grāmatveža pārbaudes.
 
@@ -63,6 +63,14 @@ Katram dokumentam ir **PVN veids**. To nosaka automātiski (pircēja valsts, PVN
 - **139.2 pants** (nav PVN maksātājs, reģistrēts tikai pakalpojumiem no ārvalstīm un ES precēm): PVN 21% aprēķina no pakalpojumiem no ārvalstīm un ES precēm, grāmato izmaksās (Dt izdevumi / Kt 5721), mēneša saraksts paziņojumam par PVN samaksu (līdz nākamā mēneša 20. datumam).
 - **Nav PVN maksātājs:** pārbaude brīdina, ja jāreģistrējas - pakalpojumi no ārvalstīm, pakalpojumi ES uzņēmumiem, preces no ES > 10 000 € gadā (apgrozījuma 50 000 € slieksnis - kā žurnālā).
 - Rēķinos ES / apgrieztās maksāšanas darījumiem ierakstiet piezīmi "Nodokļa apgrieztā maksāšana" un pircēja PVN numuru - pārbaude to atgādina.
+
+## Pārbaude pirms iesniegšanas VID EDS
+Pirms XML faila lejupielādes modulis to pārbauda un parāda „Viss kārtībā” vai kļūdu sarakstu:
+- **PVN deklarācija** – pēc VID oficiālās XML shēmas (DokPVNv7; modulis to lejupielādē no vid.gov.lv un saglabā veikalā) un pēc noteikumiem: 43. rinda, 52./55. rinda pret bāzi, PVN 1 un PVN 2 rindu pilnība, dokumenti bez PVN veida.
+- **UIN deklarācija** un **gada pārskats** – pēc VID formāta apraksta un noteikumiem: rindu aprēķini, 25.1 rindas skaidrojums, bilances aktīva un pasīva sakritība, paraksttiesīgā persona.
+
+## Termiņi un atgādinājumi
+Termiņi redzami cilnē **Pārskats** un **Nodokļi**. Atgādinājumi pa e-pastu – Iestatījumi → Termiņi un atgādinājumi (dienas pirms termiņa, adrese); par katru termiņu tiek atgādināts vienreiz un vēlreiz, ja tas nokavēts. Kad deklarācija iesniegta, atzīmējiet to („Iesniegts”).
 
 ## UIN
 - 20% no sadalītās peļņas: bāze = summa / 0,8 (1000 € dividendes → UIN 250 €).

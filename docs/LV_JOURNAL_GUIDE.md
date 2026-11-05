@@ -1,4 +1,4 @@
-# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.3.0)
+# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.4.0)
 
 Ieņēmumu un izdevumu uzskaites žurnāls vienkāršā ieraksta sistēmā, aizpildīts automātiski no apmaksātiem pasūtījumiem. Formāts atbilst MK noteikumiem Nr. 322 par grāmatvedību vienkāršā ieraksta sistēmā (likumi.lv/ta/id/332883): **1. pielikums** (IIN maksātāji, 24 ailes), **2. pielikums** (MUN maksātāji, 15 ailes) un **3. pielikums** (izdevumu precizēšanas reģistrs).
 
@@ -62,6 +62,15 @@ Lasīšanas programma (~6 MB) pirmajā reizē tiek ielādēta no jsDelivr CDN un
 
 ## Attaisnojuma dokumenti
 Katram ierakstam var pievienot foto vai PDF (līdz 15 MB). Faili tiek glabāti aizsargātā mapē `storage/lv_journal_docs/` (nav pieejami no interneta), ar kontrolsummu, un tos nevar izdzēst no moduļa.
+
+## Termiņi un atgādinājumi
+Cilnē **Pārskats** – tuvākie deklarāciju un maksājumu termiņi, ar atzīmi „Iesniegts” (un EDS numuru). Termiņi izriet no nodokļu režīma un PVN statusa; ja termiņš ir brīvdienā vai svētku dienā, tas pārcelts uz nākamo darba dienu:
+- **Gada ienākumu deklarācija** – no 1. marta līdz 1. jūnijam (līdz 1. jūlijam, ja iepriekšējā gada ienākumi pārsniedz 78 100 €); nodoklis jāsamaksā līdz 23. jūnijam.
+- **Pašnodarbinātā ziņojums par VSAOI** (IIN maksātājiem) – par ceturksni līdz nākamā mēneša 17. datumam, samaksa līdz 23. datumam; ja ceturksnī nebija ienākumu, ziņojums nav jāiesniedz.
+- **Mikrouzņēmumu nodokļa deklarācija** (MUN maksātājiem) – līdz ceturksnim sekojošā mēneša 15. datumam, samaksa līdz 23. datumam; tikai ceturkšņos ar apgrozījumu.
+- **PVN deklarācija** (PVN maksātājiem) – līdz nākamā mēneša 20. datumam, samaksa līdz 23. datumam; periods (mēnesis vai ceturksnis) – iestatījumos.
+
+**Atgādinājumi pa e-pastu** (Iestatījumi → Termiņi un atgādinājumi): norādītās dienas pirms termiņa un vēlreiz, ja termiņš nokavēts. Tiek izmantoti veikala e-pasta iestatījumi; adrese – norādītā, citādi uzņēmuma, citādi veikala e-pasts. Pārbaude notiek, atverot moduli vai kad mainās pasūtījuma statuss, ne biežāk kā reizi dienā. Kad deklarācija iesniegta, atzīmējiet to – atgādinājumi par to beidzas.
 
 ## Pārbaudes (cilne "Pārskats")
 - vai visi apmaksātie pasūtījumi ir žurnālā un katrai atmaksai ir atmaksas ieraksts;
