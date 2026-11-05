@@ -1,4 +1,4 @@
-# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.3.0)
+# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.4.0)
 
 Divkāršā ieraksta grāmatvedība Latvijas SIA tieši OpenCart administrācijā. Uztur jūsu SIA grāmatas gatavas grāmatvedim - **neaizstāj grāmatvedi**. Mazām SIA gada pārskatu parasti paraksta grāmatvedis vai valde pēc grāmatveža pārbaudes.
 
@@ -24,7 +24,8 @@ Modulis ir atsevišķs produkts, veidots uz "Saimnieciskās darbības žurnāla"
 - **Krājumi** - pārdodot pasūtījumu, pašizmaksa pēc vidējās cenas (Dt 7110 / Kt 2130). Gada beigās - inventarizācija; starpība uz 7110.
 - **Pamatlīdzekļi** - lineārais nolietojums katru mēnesi no nākamā mēneša pēc nodošanas lietošanā (Dt 7410 / Kt 1290 vai 1190).
 - **Dividendes** - lēmums Dt 3410 / Kt 5150; izmaksa Dt 5150 / Kt nauda, UIN Dt 8610 / Kt 5710 izmaksas mēnesī; 15% gadījumā IIN 6% Kt 5710.
-- **Manuāli grāmatojumi** - aizdevumi (2390, 5210), algu kopsummas no algu programmas, pārgrāmatojumi.
+- **Algas** - no cilnes "Algas" (vai algu kopsummas no citas algu programmas kā manuāls grāmatojums).
+- **Manuāli grāmatojumi** - aizdevumi (2390, 5210), pārgrāmatojumi.
 - Ja žurnāla dokumentā naudas un ieņēmumu/izdevumu summas nesakrīt (piem. korekcija bez naudas), starpība iet uz 2310 vai 5910, un pārbaude to parāda.
 
 Nekas netiek dzēsts: importētie dokumenti ir aizsargāti, manuālos anulē ar iemeslu, katra izmaiņa redzama izmaiņu vēsturē.
@@ -79,6 +80,15 @@ Termiņi redzami cilnē **Pārskats** un **Nodokļi**. Atgādinājumi pa e-pastu
 - **Salīdzināšanas akts** – visi darījumi ar partneri kontos 2310 un 5310 un atlikums, drukai un nosūtīšanai partnerim.
 - **Atkārtoti grāmatojumi** – noma, abonementi u. c. katru mēnesi norādītajā dienā; katrs mēnesis tikai vienu reizi, slēgtā periodā – nekad.
 
+## Algas (cilne "Algas")
+Redzama tikai lietotājiem ar pilnu piekļuvi modulim.
+- **Darbinieki** – vārds, personas kods, statuss (darba ņēmējs 34,09 %, vecuma pensijas saņēmējs 30,02 %, izdienas vai valsts speciālās pensijas saņēmējs 31,70 %), mēneša alga, stundas, algas nodokļa grāmatiņa, apgādājamie un papildu atvieglojums. Darbinieku VID reģistrējiet paši ("Ziņas par darba ņēmējiem") ne vēlāk kā stundu pirms darba sākuma.
+- **Algu aprēķins** – 2026. gada likmes: darba ņēmēja VSAOI 10,5 %, darba devēja 23,59 %; IIN 25,5 % no (bruto − darba ņēmēja VSAOI − neapliekamais minimums 550 € − 250 € par katru apgādājamo − papildu atvieglojums), ja grāmatiņa iesniegta šim darba devējam (pensionāram minimums 500 €); uzņēmējdarbības riska nodeva 0,36 € par darbinieku. Mēnesi var aprēķināt vienu reizi; lai pārrēķinātu, aprēķinu anulē ar iemeslu (ja alga vēl nav izmaksāta un periods nav slēgts).
+- **Grāmatojums** – mēneša beigās ar kopsummām: Dt 7210 bruto alga, Dt 7220 darba devēja VSAOI, Dt 7590 riska nodeva / Kt 5610 izmaksājamā alga, Kt 5710 nodokļi (vienotais nodokļu konts). Virsgrāmatā nav darbinieku vārdu un individuālo algu.
+- **Izmaksa** – žurnāla ieraksts Dt 5610 / Kt nauda ar kopsummu. **Algas lapiņas** – drukai vai PDF.
+- **Darba devēja ziņojums** – dati EDS ziņojumam (personas kods, vārds, darba ienākumi, obligātās iemaksas, IIN, stundas) pa statusiem un CSV. Iesniedz līdz nākamā mēneša 17. datumam, nodokļus maksā līdz 23. datumam; termiņš redzams arī "Termiņi un atgādinājumi".
+- Likmes ir modulī pa gadiem; gadam, kuram likmes vēl nav ievadītas, aprēķins netiek veikts (atjauniniet moduli).
+
 ## Konta izraksts → ieraksti
 Augšupielādējot konta izrakstu (camt.053), rindas, kuru nav žurnālā, var ierakstīt uzreiz: modulis piedāvā izrakstītā rēķina apmaksu, piegādātāja rēķina apmaksu vai jaunu ierakstu pēc noteikuma (piem. „teksts satur Komisija → 7510”). Katru izraksta rindu var ierakstīt tikai vienu reizi.
 
@@ -96,7 +106,7 @@ Augšupielādējot konta izrakstu (camt.053), rindas, kuru nav žurnālā, var i
 - Cilnē **Nodokļi**: mēneša aprēķins, XML VID EDS (DokUIENv5), termiņu kalendārs (UIN 20. datums, PVN, IIN no dividendēm, gada pārskats) ar atzīmi "iesniegts".
 
 ## Šajā versijā nav
-- Algu un darba devēja VSAOI aprēķina (ierakstiet algu kopsummas no algu programmas kā grāmatojumu).
+- Darba devēja ziņojuma XML failu VID EDS (ziņojuma dati ir tabulā un CSV - ievadiet tos EDS); ziņas par darba ņēmējiem (reģistrācija VID); atvaļinājuma naudu, slimības naudu un vidējās izpeļņas aprēķinu; valdes locekļu atlīdzību ar minimālo iemaksu objektu; darbiniekus, kuri sociāli apdrošināti citā ES valstī (33 % virs 8775 EUR mēnesī).
 - Valūtas kursu starpību (pircēju un piegādātāju parādi ārvalstu valūtā) - ievadiet ar manuālu grāmatojumu (6320 / 7570).
 - Importa PVN īpašās kārtības (aprēķins deklarācijā ar VID atļauju) un IOSS.
 
@@ -106,6 +116,7 @@ Augšupielādējot konta izrakstu (camt.053), rindas, kuru nav žurnālā, var i
 - Gada pārskata termiņš konkrētajam uzņēmuma lielumam (iestatījums "Gada pārskata termiņš", noklusējums 4 mēneši).
 - Reprezentācijas izdevumu un aizdevumu dalībniekiem iekļaušana UIN bāzē.
 - Gada pārskata XML (DokGPv1) pirms pirmās iesniegšanas.
+- Algas: VSAOI statusu likmes, neapliekamā minimuma piemērošana pensionāriem, riska nodevas grāmatošana (7590), darba devēja ziņojuma dati.
 - PVN: PVN 1 dokumentu veida kodi (1 rēķins, 2 čeks, 5 muitas dokuments), I daļas kods "N" pakalpojumiem no ārpus ES, PVN numura rakstība bez valsts prefiksa, kredītrēķinu atspoguļojums 41. rindā un 67. rindā, OSS darījumu neiekļaušana LV deklarācijā, 139.2 paziņojuma termiņš.
 
 Rīks palīdz kārtot grāmatvedību, bet nav juridisks vai nodokļu padoms un neko neiesniedz VID pats.
