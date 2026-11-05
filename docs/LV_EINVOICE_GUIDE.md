@@ -1,4 +1,4 @@
-# Lastadia E-rēķini - lietošanas instrukcija (v1.0.0)
+# Lastadia E-rēķini - lietošanas instrukcija (v1.0.1)
 
 Strukturētie e-rēķini Latvijas OpenCart veikalam: rēķini un kredītrēķini ar nepārtrauktu numerāciju un e-rēķina XML fails (Peppol BIS Billing 3.0 / EN 16931, UBL 2.1) katram rēķinam uzņēmumam. Bez grāmatvedības - grāmatvedību var kārtot jūsu grāmatvedis savā programmā (Jumis, Horizon u. c.).
 

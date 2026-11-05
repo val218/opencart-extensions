@@ -1,9 +1,9 @@
 [b]Demonstrācija un ekrānuzņēmumi:[/b] https://val218.github.io/opencart-extensions/lv-books.html
 [b]Ievadcena[/b] – spēkā līdz neatkarīga grāmatveža pārbaudes pabeigšanai.
 
-[b]SIA grāmatvedība – divkāršā ieraksta grāmatvedība tieši OpenCart administrācijā[/b]
+[b]Lastadia Grāmatvedība – divkāršā ieraksta grāmatvedība SIA un mikrosabiedrībām tieši OpenCart administrācijā[/b]
 [b]Kam paredzēts:[/b] SIA un mikrosabiedrībām – PVN maksātājiem un PVN nemaksātājiem, kas pārdod preces vai pakalpojumus OpenCart interneta veikalā.
-[b]Nav paredzēts individuālajiem komersantiem (IK) un pašnodarbinātajiem[/b] – viņiem piemērots vienkāršā ieraksta modulis „Saimnieciskās darbības žurnāls”: https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50265
+[b]Nav paredzēts individuālajiem komersantiem (IK) un pašnodarbinātajiem[/b] – viņiem piemērots vienkāršā ieraksta modulis „Lastadia Žurnāls”: https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50265
 
 Modulis uztur SIA grāmatvedību kārtībā un gatavu nodošanai grāmatvedim. Tas neaizstāj grāmatvedi un neko neiesniedz VID: tas sagatavo skaitļus un XML failus, kurus jūs pārbaudāt un iesniedzat paši.
 
@@ -37,7 +37,7 @@ Modulis uztur SIA grāmatvedību kārtībā un gatavu nodošanai grāmatvedim. T
 [list]
 [*]Darbinieki, mēneša algu aprēķins ar 2026. gada likmēm: VSAOI (darba ņēmējs, pensionārs, izdienas pensijas saņēmējs), IIN 25,5 % ar neapliekamo minimumu, apgādājamiem un atvieglojumiem, uzņēmējdarbības riska nodeva.
 [*][b]Atvaļinājuma nauda[/b] pēc vidējās izpeļņas (pēdējie 6 mēneši) un [b]slimības nauda[/b] (A lapa: 2.–3. diena 75 %, 4.–9. diena 80 %).
-[*]Algas lapiņas, izmaksa, darba devēja ziņojuma dati (personas kods, ienākumi, iemaksas, IIN, stundas) un termiņi. Virsgrāmatā – tikai kopsummas; algas redz tikai lietotāji ar pilnu piekļuvi.
+[*]Algas lapiņas, izmaksa, [b]darba devēja ziņojums – XML fails VID EDS[/b] (DokDDZv4) un termiņi. Virsgrāmatā – tikai kopsummas; algas redz tikai lietotāji ar pilnu piekļuvi.
 [/list]
 
 [b]PVN[/b]
@@ -66,14 +66,14 @@ Modulis uztur SIA grāmatvedību kārtībā un gatavu nodošanai grāmatvedim. T
 [*][b]Dati grāmatvedim[/b] – viens ZIP fails gadam: virsgrāmata, apgrozījuma pārskats, kontu plāns, PVN reģistri, piegādātāju rēķini, algas (CSV – atveras Excel, importējami Jumis, Horizon, Zalktis, 1C), rēķini, e-rēķini un čeku attēli. Pilna datu kopija JSON formātā.
 [/list]
 
-[b]Šajā versijā nav:[/b] e-rēķinu nosūtīšanas tieši uz e-adresi (XML failu nosūtiet caur e-adresi vai e-rēķinu pakalpojumu), darba devēja ziņojuma XML faila (dati ir tabulā un CSV), valūtas kursu starpību, IOSS.
+[b]Šajā versijā nav:[/b] e-rēķinu nosūtīšanas tieši uz e-adresi (XML failu nosūtiet caur e-adresi vai e-rēķinu pakalpojumu), valūtas kursu starpību, IOSS.
 
 [b]E-rēķini iekļauti[/b] – strukturētie e-rēķini (Peppol / EN 16931) jau ir šajā modulī. Ja vajag tikai e-rēķinus bez grāmatvedības, ir atsevišķs modulis „Lastadia E-rēķini”: https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50285
 
 [b]Tehniskā informācija[/b]
 [list]
 [*]OpenCart 3.0.x un 4.0.x / 4.1.x (pārbaudīts 3.0.4.0, 4.0.2.3, 4.1.0.3, 4.1.0.4) – divi ZIP faili, viens pirkums.
-[*]Darbojas ar notikumiem (events), bez OCMOD; OpenCart faili netiek mainīti. Atsevišķas datubāzes tabulas – var darboties vienā veikalā ar „Saimnieciskās darbības žurnālu”.
+[*]Darbojas ar notikumiem (events), bez OCMOD; OpenCart faili netiek mainīti. Atsevišķas datubāzes tabulas – var darboties vienā veikalā ar „Lastadia Žurnālu”.
 [*]Saskarne latviešu, angļu vai krievu valodā; oficiālās izdrukas – latviešu valodā.
 [/list]
 
@@ -81,7 +81,7 @@ Modulis uztur SIA grāmatvedību kārtībā un gatavu nodošanai grāmatvedim. T
 Bezmaksas licence profesionālai pārbaudei. Ja esat grāmatvedis un vēlaties izvērtēt moduli, sazinieties ar izstrādātāju.
 
 [b]English[/b]
-Double-entry bookkeeping for Latvian limited companies (SIA) and micro companies, VAT payers and non-VAT payers, inside OpenCart. Not for individual merchants (IK) or self-employed people – they use the LV journal. Postings from paid orders, refunds and fees; expenses from receipt and invoice photos read in the browser; invoices, credit notes, Peppol e-invoices and CMR notes; supplier invoices, open items and balance confirmations; payroll with holiday and sick pay; cash flow statement; closed periods, per-user access and a ZIP package for the accountant; VAT treatment per document with the VAT return, PVN 1, PVN 2 and OSS; stock at average cost; fixed assets; dividends with corporate income tax 20 % or 15 %; profit and loss account, balance sheet, annual report and XML files for VID EDS.
+Double-entry bookkeeping for Latvian limited companies (SIA) and micro companies, VAT payers and non-VAT payers, inside OpenCart. Not for individual merchants (IK) or self-employed people – they use Lastadia Žurnāls. Postings from paid orders, refunds and fees; expenses from receipt and invoice photos read in the browser; invoices, credit notes, Peppol e-invoices and CMR notes; supplier invoices, open items and balance confirmations; payroll with holiday and sick pay; cash flow statement; closed periods, per-user access and a ZIP package for the accountant; VAT treatment per document with the VAT return, PVN 1, PVN 2 and OSS; stock at average cost; fixed assets; dividends with corporate income tax 20 % or 15 %; profit and loss account, balance sheet, annual report and XML files for VID EDS.
 
 [b]Svarīgi[/b]
 Modulis palīdz kārtot grāmatvedību, taču tas nav juridisks vai nodokļu konsultants, un to vēl nav pārbaudījis sertificēts grāmatvedis. Pirms deklarāciju iesniegšanas pārbaudiet skaitļus kopā ar savu grāmatvedi. Lietošanas instrukcija: https://val218.github.io/opencart-extensions/docs/LV_BOOKS_GUIDE.md

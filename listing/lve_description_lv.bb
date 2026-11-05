@@ -27,7 +27,7 @@
 [/list]
 
 [b]Pilna grāmatvedība[/b]
-Ja vajag arī grāmatvedību, e-rēķini jau ir iekļauti moduļos „SIA grāmatvedība” (https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50284) un „Saimnieciskās darbības žurnāls” (https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50265) – šo moduli tad atsevišķi pirkt nevajag.
+Ja vajag arī grāmatvedību, e-rēķini jau ir iekļauti moduļos „Lastadia Grāmatvedība” (https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50284) un „Lastadia Žurnāls” (https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50265) – šo moduli tad atsevišķi pirkt nevajag.
 
 [b]Tehniskā informācija[/b]
 [list]

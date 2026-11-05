@@ -1,4 +1,4 @@
-# Saimnieciskās darbības žurnāls - lietošanas instrukcija (v1.6.2)
+# Lastadia Žurnāls (IK un pašnodarbinātajiem) - lietošanas instrukcija (v1.6.3)
 
 Ieņēmumu un izdevumu uzskaites žurnāls vienkāršā ieraksta sistēmā, aizpildīts automātiski no apmaksātiem pasūtījumiem. Formāts atbilst MK noteikumiem Nr. 322 par grāmatvedību vienkāršā ieraksta sistēmā (likumi.lv/ta/id/332883): **1. pielikums** (IIN maksātāji, 24 ailes), **2. pielikums** (MUN maksātāji, 15 ailes) un **3. pielikums** (izdevumu precizēšanas reģistrs).
 

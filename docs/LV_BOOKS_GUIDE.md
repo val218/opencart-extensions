@@ -1,4 +1,4 @@
-# SIA grāmatvedība (LV Books) - lietošanas instrukcija (v1.5.2)
+# Lastadia Grāmatvedība (SIA un mikrosabiedrībām) - lietošanas instrukcija (v1.5.3)
 
 Divkāršā ieraksta grāmatvedība Latvijas SIA tieši OpenCart administrācijā. Uztur jūsu SIA grāmatas gatavas grāmatvedim - **neaizstāj grāmatvedi**. Mazām SIA gada pārskatu parasti paraksta grāmatvedis vai valde pēc grāmatveža pārbaudes.
 
@@ -87,7 +87,7 @@ Redzama tikai lietotājiem ar pilnu piekļuvi modulim.
 - **Grāmatojums** – mēneša beigās ar kopsummām: Dt 7210 bruto alga, Dt 7220 darba devēja VSAOI, Dt 7590 riska nodeva / Kt 5610 izmaksājamā alga, Kt 5710 nodokļi (vienotais nodokļu konts). Virsgrāmatā nav darbinieku vārdu un individuālo algu.
 - **Atvaļinājuma nauda** – vidējā dienas izpeļņa (pēdējo 6 mēnešu alga par nostrādāto laiku / nostrādātās dienas, Darba likuma 75. pants; ne mazāk kā minimālā alga) × atvaļinājuma darba dienas. **Slimības nauda (A lapa)** – 1. diena netiek apmaksāta, 2.–3. diena 75 %, 4.–9. diena 80 % no vidējās izpeļņas, tikai darba dienas (svētku dienas ievērotas); no 10. dienas maksā valsts (B lapa). Alga par nostrādāto laiku tiek samazināta proporcionāli.
 - **Izmaksa** – žurnāla ieraksts Dt 5610 / Kt nauda ar kopsummu. **Algas lapiņas** – drukai vai PDF.
-- **Darba devēja ziņojums** – dati EDS ziņojumam (personas kods, vārds, darba ienākumi, obligātās iemaksas, IIN, stundas) pa statusiem un CSV. Iesniedz līdz nākamā mēneša 17. datumam, nodokļus maksā līdz 23. datumam; termiņš redzams arī "Termiņi un atgādinājumi".
+- **Darba devēja ziņojums** – XML fails VID EDS (DokDDZv4: 1. tabula darba ņēmēji, 2. tabula izdienas pensijas saņēmēji un personas ar I vai II grupas invaliditāti, 3. tabula vecuma pensionāri; darba veids 1, riska nodeva, kopsummas) ar pārbaudi pirms lejupielādes, kā arī tabula un CSV. EDS: "Izveidot jaunu dokumentu" → "No faila". Valdes locekļus, jaunuzņēmumu darbiniekus u. c. pievienojiet EDS paši. Iesniedz līdz nākamā mēneša 17. datumam, nodokļus maksā līdz 23. datumam; termiņš redzams arī "Termiņi un atgādinājumi".
 - Likmes ir modulī pa gadiem; gadam, kuram likmes vēl nav ievadītas, aprēķins netiek veikts (atjauniniet moduli).
 
 ## E-rēķini (strukturētie rēķini)
@@ -126,7 +126,7 @@ Iestatījumi → "Programmatūras licence": ievadiet OpenCart Marketplace pasūt
 - Cilnē **Nodokļi**: mēneša aprēķins, XML VID EDS (DokUIENv5), termiņu kalendārs (UIN 20. datums, PVN, IIN no dividendēm, gada pārskats) ar atzīmi "iesniegts".
 
 ## Šajā versijā nav
-- Darba devēja ziņojuma XML failu VID EDS (ziņojuma dati ir tabulā un CSV - ievadiet tos EDS); ziņas par darba ņēmējiem (reģistrācija VID); summētā darba laika (stundu) vidējās izpeļņas; nelaimes gadījuma darbā slimības naudas (10 dienas); valdes locekļu atlīdzību ar minimālo iemaksu objektu; darbiniekus, kuri sociāli apdrošināti citā ES valstī (33 % virs 8775 EUR mēnesī).
+- Ziņas par darba ņēmējiem (reģistrācija VID); summētā darba laika (stundu) vidējās izpeļņas; nelaimes gadījuma darbā slimības naudas (10 dienas); valdes locekļu atlīdzību ar minimālo iemaksu objektu; darbiniekus, kuri sociāli apdrošināti citā ES valstī (33 % virs 8775 EUR mēnesī).
 - Valūtas kursu starpību (pircēju un piegādātāju parādi ārvalstu valūtā) - ievadiet ar manuālu grāmatojumu (6320 / 7570).
 - Importa PVN īpašās kārtības (aprēķins deklarācijā ar VID atļauju) un IOSS.
 
@@ -136,7 +136,7 @@ Iestatījumi → "Programmatūras licence": ievadiet OpenCart Marketplace pasūt
 - Gada pārskata termiņš konkrētajam uzņēmuma lielumam (iestatījums "Gada pārskata termiņš", noklusējums 4 mēneši).
 - Reprezentācijas izdevumu un aizdevumu dalībniekiem iekļaušana UIN bāzē.
 - Gada pārskata XML (DokGPv1) pirms pirmās iesniegšanas.
-- Algas: VSAOI statusu likmes, neapliekamā minimuma piemērošana pensionāriem, riska nodevas grāmatošana (7590), darba devēja ziņojuma dati.
+- Algas: VSAOI statusu likmes, neapliekamā minimuma piemērošana pensionāriem, riska nodevas grāmatošana (7590), darba devēja ziņojuma XML (DokDDZv4) pirms pirmās iesniegšanas.
 - PVN: PVN 1 dokumentu veida kodi (1 rēķins, 2 čeks, 5 muitas dokuments), I daļas kods "N" pakalpojumiem no ārpus ES, PVN numura rakstība bez valsts prefiksa, kredītrēķinu atspoguļojums 41. rindā un 67. rindā, OSS darījumu neiekļaušana LV deklarācijā, 139.2 paziņojuma termiņš.
 
 Rīks palīdz kārtot grāmatvedību, bet nav juridisks vai nodokļu padoms un neko neiesniedz VID pats.

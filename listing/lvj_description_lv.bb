@@ -1,9 +1,9 @@
 [b]Demonstrācija, ekrānuzņēmumi un video:[/b] https://val218.github.io/opencart-extensions/lv-journal.html
 [b]Ievadcena[/b] – spēkā līdz neatkarīga grāmatveža pārbaudes pabeigšanai.
 
-[b]Saimnieciskās darbības žurnāls – ieņēmumu un izdevumu uzskaite (MK noteikumi Nr. 322) tieši OpenCart administrācijā[/b]
+[b]Lastadia Žurnāls – saimnieciskās darbības ieņēmumu un izdevumu uzskaites žurnāls (MK noteikumi Nr. 322) tieši OpenCart administrācijā[/b]
 [b]Kam paredzēts:[/b] individuālajiem komersantiem (IK) un pašnodarbinātajiem, kas kārto uzskaiti vienkāršā ieraksta sistēmā – IIN vai MUN maksātājiem, PVN maksātājiem un PVN nemaksātājiem.
-[b]Nav paredzēts SIA[/b] – sabiedrībai ar ierobežotu atbildību jākārto divkāršā ieraksta grāmatvedība. SIA izmantojiet moduli „SIA grāmatvedība”: https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50284
+[b]Nav paredzēts SIA[/b] – sabiedrībai ar ierobežotu atbildību jākārto divkāršā ieraksta grāmatvedība. SIA izmantojiet moduli „Lastadia Grāmatvedība”: https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50284
 
 Apmaksātie pasūtījumi automātiski kļūst par žurnāla ierakstiem, tiklīdz mainās pasūtījuma statuss. Saskarne latviešu, angļu vai krievu valodā; oficiālās izdrukas vienmēr latviešu valodā.
 
@@ -64,7 +64,7 @@ Apmaksātie pasūtījumi automātiski kļūst par žurnāla ierakstiem, tiklīdz
 Bezmaksas licence profesionālai pārbaudei. Ja esat grāmatvedis un vēlaties izvērtēt moduli, sazinieties ar izstrādātāju.
 
 [b]English[/b]
-For individual merchants (IK) and self-employed people in Latvia – not for limited companies (SIA use LV Books). Income and expense journal (Regulation No. 322, Annexes 1–3) filled in automatically from paid orders, refunds and payment fees, with a locked audit trail, invoices and credit notes with continuous numbering, Peppol e-invoices (EN 16931), a ZIP package for the accountant, closed periods and per-user access, deadline reminders, expenses read from receipt photos in the browser, CMR consignment notes, bank statement (camt.053) matching, Bank of Latvia exchange rates and a company profile from the Latvian registers. Interface in Latvian, English and Russian.
+For individual merchants (IK) and self-employed people in Latvia – not for limited companies (SIA use Lastadia Grāmatvedība). Income and expense journal (Regulation No. 322, Annexes 1–3) filled in automatically from paid orders, refunds and payment fees, with a locked audit trail, invoices and credit notes with continuous numbering, Peppol e-invoices (EN 16931), a ZIP package for the accountant, closed periods and per-user access, deadline reminders, expenses read from receipt photos in the browser, CMR consignment notes, bank statement (camt.053) matching, Bank of Latvia exchange rates and a company profile from the Latvian registers. Interface in Latvian, English and Russian.
 
 [b]Svarīgi[/b]
 Modulis palīdz kārtot uzskaiti, taču tas nav juridisks vai nodokļu konsultants un neiesniedz dokumentus VID. Pirms deklarāciju iesniegšanas pārbaudiet ierakstus kopā ar savu grāmatvedi. Lietošanas instrukcija: https://val218.github.io/opencart-extensions/docs/LV_JOURNAL_GUIDE.md
