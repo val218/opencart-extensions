@@ -51,6 +51,8 @@ Apmaksātie pasūtījumi automātiski kļūst par žurnāla ierakstiem, tiklīdz
 [*]Trūkstoši pasūtījumi un atmaksas, sākuma atlikumi, konta izraksta (camt.053) salīdzināšana (12. punkts), izdevumi bez attaisnojuma dokumenta, CMR bez saņemšanas atzīmes.
 [/list]
 
+[b]E-rēķini iekļauti[/b] – strukturētie e-rēķini (Peppol / EN 16931) jau ir šajā modulī. Ja vajag tikai e-rēķinus bez grāmatvedības, ir atsevišķs modulis „Lastadia E-rēķini”: https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=50285
+
 [b]Tehniskā informācija[/b]
 [list]
 [*]OpenCart 3.0.x un 4.0.x / 4.1.x (pārbaudīts 3.0.4.0, 4.0.2.3, 4.1.0.3, 4.1.0.4) – divi ZIP faili, viens pirkums.
