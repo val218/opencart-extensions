@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Your Store">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Atelier","url":"index.html","telephone":"123456789","email":"admin@example.com"}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Atelier","url":"index.html","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"http://127.0.0.1:8083/en-gb?route=product/search\u0026search={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Atelier","url":"index.html","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"#demo-off"},"query-input":"required name=search_term_string"}}</script>
 </head>
 <body><div id="th-demo-note" style="background:#1d2329;color:#fff;font:14px/1.45 system-ui,sans-serif;padding:9px 16px;text-align:center"><b>Treasure Hunt demo</b> on a standard OpenCart 4 shop: 6 gold coins are hidden on product pages. Tap the coin button bottom left for hints, find them all and win a prize code. <a href="#" id="th-demo-reset" style="color:#f5c542">Start again</a> · Products are made up, nothing is sold.</div>
 <div id="container">
@@ -31,7 +31,7 @@
       <div class="row">
         <div class="col-4">
           <ul class="list-inline">
-            <li class="list-inline-item me-3">  <form id="form-currency" action="http://127.0.0.1:8083/en-gb?route=common/currency.save" method="post" data-oc-toggle="ajax">
+            <li class="list-inline-item me-3">  <form id="form-currency" action="#demo-off" method="post" data-oc-toggle="ajax">
     <div class="dropdown"><span role="button" data-bs-toggle="dropdown" class="dropdown-toggle"><strong>€</strong> <span class="d-none d-md-inline">Currency</span> <i class="fa-solid fa-caret-down"></i></span>
       <ul class="dropdown-menu">
                               <li><span role="button" data-code="EUR" class="dropdown-item">€ Euro</span></li>
@@ -40,7 +40,7 @@
                         </ul>
     </div>
     <input type="hidden" name="code" value=""/>
-    <input type="hidden" name="redirect" value="http://127.0.0.1:8083/en-gb?route=common/home"/>
+    <input type="hidden" name="redirect" value="index.html"/>
   </form>
 </li>
             <li class="list-inline-item"></li>
@@ -48,19 +48,19 @@
         </div>
         <div class="col text-end">
           <ul class="list-inline">
-            <li class="list-inline-item"><a href="http://127.0.0.1:8083/en-gb?route=information/contact"><i class="fa-solid fa-phone"></i> <span class="d-none d-lg-inline">123456789</span></a></li>
+            <li class="list-inline-item"><a href="#demo-off"><i class="fa-solid fa-phone"></i> <span class="d-none d-lg-inline">123456789</span></a></li>
             <li class="list-inline-item">
               <div class="dropdown">
                 <span role="button" class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i> <span class="d-none d-lg-inline">My Account</span> <i class="fa-solid fa-caret-down"></i></span>
                 <ul class="dropdown-menu dropdown-menu-right">
-                                      <li><a href="http://127.0.0.1:8083/en-gb?route=account/register" class="dropdown-item">Register</a></li>
-                    <li><a href="http://127.0.0.1:8083/en-gb?route=account/login" class="dropdown-item">Login</a></li>
+                                      <li><a href="#demo-off" class="dropdown-item">Register</a></li>
+                    <li><a href="#demo-off" class="dropdown-item">Login</a></li>
                                   </ul>
               </div>
             </li>
-            <li class="list-inline-item"><a href="http://127.0.0.1:8083/en-gb?route=account/wishlist" id="wishlist-total" title="Wish List (0)"><i class="fa-solid fa-heart"></i> <span class="d-none d-lg-inline">Wish List (0)</span></a></li>
-            <li class="list-inline-item"><a href="http://127.0.0.1:8083/en-gb?route=checkout/cart" title="Shopping Cart"><i class="fa-solid fa-cart-shopping"></i> <span class="d-none d-lg-inline">Shopping Cart</span></a></li>
-            <li class="list-inline-item"><a href="http://127.0.0.1:8083/en-gb?route=checkout/checkout" title="Checkout"><i class="fa-solid fa-share"></i> <span class="d-none d-lg-inline">Checkout</span></a></li>
+            <li class="list-inline-item"><a href="#demo-off" id="wishlist-total" title="Wish List (0)"><i class="fa-solid fa-heart"></i> <span class="d-none d-lg-inline">Wish List (0)</span></a></li>
+            <li class="list-inline-item"><a href="#demo-off" title="Shopping Cart"><i class="fa-solid fa-cart-shopping"></i> <span class="d-none d-lg-inline">Shopping Cart</span></a></li>
+            <li class="list-inline-item"><a href="#demo-off" title="Checkout"><i class="fa-solid fa-share"></i> <span class="d-none d-lg-inline">Checkout</span></a></li>
           </ul>
         </div>
       </div>
@@ -71,10 +71,10 @@
       <div class="row">
         <div class="col-md-3 col-lg-4">
           <div id="logo">
-                          <h1><a href="http://127.0.0.1:8083/en-gb?route=common/home">Atelier</a></h1>
+                          <h1><a href="index.html">Atelier</a></h1>
                       </div>
         </div>
-        <div class="col-md-5"><form action="http://127.0.0.1:8083/en-gb?route=common/search.redirect" method="post" class="input-group mb-3">
+        <div class="col-md-5"><form action="#demo-off" method="post" class="input-group mb-3">
 	<input type="text" name="search" value="" placeholder="Search" class="form-control form-control-lg"/>
 	<button type="submit" class="btn btn-light btn-lg"><i class="fa-solid fa-magnifying-glass"></i></button>
 </form>
@@ -95,9 +95,9 @@
       <button type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" class="navbar-toggler d-lg-none"><i class="fa-solid fa-bars"></i></button>
       <div id="navbar-menu" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-                                    <li class="nav-item"><a href="http://127.0.0.1:8083/en-gb/catalog/women" class="dropdown-item">Women</a></li>
-                                                <li class="nav-item"><a href="http://127.0.0.1:8083/en-gb/catalog/men" class="dropdown-item">Men</a></li>
-                                                <li class="nav-item"><a href="http://127.0.0.1:8083/en-gb/catalog/kids" class="dropdown-item">Kids</a></li>
+                                    <li class="nav-item"><a href="women.html" class="dropdown-item">Women</a></li>
+                                                <li class="nav-item"><a href="men.html" class="dropdown-item">Men</a></li>
+                                                <li class="nav-item"><a href="kids.html" class="dropdown-item">Kids</a></li>
                               </ul>
       </div>
     </nav>
@@ -109,168 +109,168 @@
     <div id="content" class="col"><h3>Featured</h3>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4">
       <div class="col mb-3"><div class="product-thumb">
-  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/breton-striped-top"><img src="image/cache/catalog/demo2/w-breton-200x200.png" alt="Breton Striped Top" title="Breton Striped Top" class="img-fluid"/></a></div>
+  <div class="image"><a href="p9103.html"><img src="image/cache/catalog/demo2/w-breton-200x200.png" alt="Breton Striped Top" title="Breton Striped Top" class="img-fluid"/></a></div>
   <div class="content">
     <div class="description">
-      <h4><a href="http://127.0.0.1:8083/en-gb/product/breton-striped-top">Breton Striped Top</a></h4>
+      <h4><a href="p9103.html">Breton Striped Top</a></h4>
       <p>The classic Breton top in heavy cotton jersey with navy stripes and a wide boat neck. Slightly cropp..</p>
               <div class="price">
                       <span class="price-new">39.00€</span>
                                 <span class="price-tax">Ex Tax: 39.00€</span>
                   </div>
                 </div>
-    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+    <form method="post" data-oc-toggle="ajax" data-oc-load="index.php?route=common/cart.info" data-oc-target="#cart">
       <div class="button">
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+        <button type="submit" formaction="index.php?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="index.php?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="index.php?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
       </div>
       <input type="hidden" name="product_id" value="9103"/> <input type="hidden" name="quantity" value="1"/>
     </form>
   </div>
 </div></div>
       <div class="col mb-3"><div class="product-thumb">
-  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/ivory-silk-blouse"><img src="image/cache/catalog/demo2/w-blouse-200x200.png" alt="Ivory Silk Blouse" title="Ivory Silk Blouse" class="img-fluid"/></a></div>
+  <div class="image"><a href="p9101.html"><img src="image/cache/catalog/demo2/w-blouse-200x200.png" alt="Ivory Silk Blouse" title="Ivory Silk Blouse" class="img-fluid"/></a></div>
   <div class="content">
     <div class="description">
-      <h4><a href="http://127.0.0.1:8083/en-gb/product/ivory-silk-blouse">Ivory Silk Blouse</a></h4>
+      <h4><a href="p9101.html">Ivory Silk Blouse</a></h4>
       <p>A fluid ivory blouse in washable silk with a soft tie at the neck. It drapes lightly over the hips, ..</p>
               <div class="price">
                       <span class="price-new">79.00€</span>
                                 <span class="price-tax">Ex Tax: 79.00€</span>
                   </div>
                 </div>
-    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+    <form method="post" data-oc-toggle="ajax" data-oc-load="index.php?route=common/cart.info" data-oc-target="#cart">
       <div class="button">
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+        <button type="submit" formaction="index.php?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="index.php?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="index.php?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
       </div>
       <input type="hidden" name="product_id" value="9101"/> <input type="hidden" name="quantity" value="1"/>
     </form>
   </div>
 </div></div>
       <div class="col mb-3"><div class="product-thumb">
-  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/navy-floral-wrap-dress"><img src="image/cache/catalog/demo2/w-dress-200x200.png" alt="Navy Floral Wrap Dress" title="Navy Floral Wrap Dress" class="img-fluid"/></a></div>
+  <div class="image"><a href="p9121.html"><img src="image/cache/catalog/demo2/w-dress-200x200.png" alt="Navy Floral Wrap Dress" title="Navy Floral Wrap Dress" class="img-fluid"/></a></div>
   <div class="content">
     <div class="description">
-      <h4><a href="http://127.0.0.1:8083/en-gb/product/navy-floral-wrap-dress">Navy Floral Wrap Dress</a></h4>
+      <h4><a href="p9121.html">Navy Floral Wrap Dress</a></h4>
       <p>A navy wrap dress with a small white floral print, tied at the waist so it fits many shapes. The V n..</p>
               <div class="price">
                       <span class="price-new">99.00€</span>
                                 <span class="price-tax">Ex Tax: 99.00€</span>
                   </div>
                 </div>
-    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+    <form method="post" data-oc-toggle="ajax" data-oc-load="index.php?route=common/cart.info" data-oc-target="#cart">
       <div class="button">
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+        <button type="submit" formaction="index.php?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="index.php?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="index.php?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
       </div>
       <input type="hidden" name="product_id" value="9121"/> <input type="hidden" name="quantity" value="1"/>
     </form>
   </div>
 </div></div>
       <div class="col mb-3"><div class="product-thumb">
-  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/sage-pleated-midi-skirt"><img src="image/cache/catalog/demo2/w-skirt-200x200.png" alt="Sage Pleated Midi Skirt" title="Sage Pleated Midi Skirt" class="img-fluid"/></a></div>
+  <div class="image"><a href="p9113.html"><img src="image/cache/catalog/demo2/w-skirt-200x200.png" alt="Sage Pleated Midi Skirt" title="Sage Pleated Midi Skirt" class="img-fluid"/></a></div>
   <div class="content">
     <div class="description">
-      <h4><a href="http://127.0.0.1:8083/en-gb/product/sage-pleated-midi-skirt">Sage Pleated Midi Skirt</a></h4>
+      <h4><a href="p9113.html">Sage Pleated Midi Skirt</a></h4>
       <p>A sage-green midi skirt with fine knife pleats that move as you walk. Elastic at the back of the wai..</p>
               <div class="price">
                       <span class="price-new">65.00€</span>
                                 <span class="price-tax">Ex Tax: 65.00€</span>
                   </div>
                 </div>
-    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+    <form method="post" data-oc-toggle="ajax" data-oc-load="index.php?route=common/cart.info" data-oc-target="#cart">
       <div class="button">
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+        <button type="submit" formaction="index.php?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="index.php?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="index.php?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
       </div>
       <input type="hidden" name="product_id" value="9113"/> <input type="hidden" name="quantity" value="1"/>
     </form>
   </div>
 </div></div>
       <div class="col mb-3"><div class="product-thumb">
-  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/white-oxford-shirt"><img src="image/cache/catalog/demo2/m-oxford-200x200.png" alt="White Oxford Shirt" title="White Oxford Shirt" class="img-fluid"/></a></div>
+  <div class="image"><a href="p9201.html"><img src="image/cache/catalog/demo2/m-oxford-200x200.png" alt="White Oxford Shirt" title="White Oxford Shirt" class="img-fluid"/></a></div>
   <div class="content">
     <div class="description">
-      <h4><a href="http://127.0.0.1:8083/en-gb/product/white-oxford-shirt">White Oxford Shirt</a></h4>
+      <h4><a href="p9201.html">White Oxford Shirt</a></h4>
       <p>A white oxford shirt in sturdy, soft cotton with a button-down collar. Cut straight to wear tucked i..</p>
               <div class="price">
                       <span class="price-new">59.00€</span>
                                 <span class="price-tax">Ex Tax: 59.00€</span>
                   </div>
                 </div>
-    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+    <form method="post" data-oc-toggle="ajax" data-oc-load="index.php?route=common/cart.info" data-oc-target="#cart">
       <div class="button">
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+        <button type="submit" formaction="index.php?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="index.php?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="index.php?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
       </div>
       <input type="hidden" name="product_id" value="9201"/> <input type="hidden" name="quantity" value="1"/>
     </form>
   </div>
 </div></div>
       <div class="col mb-3"><div class="product-thumb">
-  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/olive-cord-overshirt"><img src="image/cache/catalog/demo2/m-overshirt-200x200.png" alt="Olive Cord Overshirt" title="Olive Cord Overshirt" class="img-fluid"/></a></div>
+  <div class="image"><a href="p9203.html"><img src="image/cache/catalog/demo2/m-overshirt-200x200.png" alt="Olive Cord Overshirt" title="Olive Cord Overshirt" class="img-fluid"/></a></div>
   <div class="content">
     <div class="description">
-      <h4><a href="http://127.0.0.1:8083/en-gb/product/olive-cord-overshirt">Olive Cord Overshirt</a></h4>
+      <h4><a href="p9203.html">Olive Cord Overshirt</a></h4>
       <p>An olive overshirt in soft corduroy with two chest pockets. Heavy enough to wear as a light jacket i..</p>
               <div class="price">
                       <span class="price-new">89.00€</span>
                                 <span class="price-tax">Ex Tax: 89.00€</span>
                   </div>
                 </div>
-    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+    <form method="post" data-oc-toggle="ajax" data-oc-load="index.php?route=common/cart.info" data-oc-target="#cart">
       <div class="button">
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+        <button type="submit" formaction="index.php?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="index.php?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="index.php?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
       </div>
       <input type="hidden" name="product_id" value="9203"/> <input type="hidden" name="quantity" value="1"/>
     </form>
   </div>
 </div></div>
       <div class="col mb-3"><div class="product-thumb">
-  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/sunny-yellow-hoodie"><img src="image/cache/catalog/demo2/k-hoodie-200x200.png" alt="Sunny Yellow Hoodie" title="Sunny Yellow Hoodie" class="img-fluid"/></a></div>
+  <div class="image"><a href="p9301.html"><img src="image/cache/catalog/demo2/k-hoodie-200x200.png" alt="Sunny Yellow Hoodie" title="Sunny Yellow Hoodie" class="img-fluid"/></a></div>
   <div class="content">
     <div class="description">
-      <h4><a href="http://127.0.0.1:8083/en-gb/product/sunny-yellow-hoodie">Sunny Yellow Hoodie</a></h4>
+      <h4><a href="p9301.html">Sunny Yellow Hoodie</a></h4>
       <p>A sunny yellow hoodie in soft brushed fleece with a roomy hood and kangaroo pocket. Ribbed cuffs kee..</p>
               <div class="price">
                       <span class="price-new">35.00€</span>
                                 <span class="price-tax">Ex Tax: 35.00€</span>
                   </div>
                 </div>
-    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+    <form method="post" data-oc-toggle="ajax" data-oc-load="index.php?route=common/cart.info" data-oc-target="#cart">
       <div class="button">
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+        <button type="submit" formaction="index.php?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="index.php?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="index.php?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
       </div>
       <input type="hidden" name="product_id" value="9301"/> <input type="hidden" name="quantity" value="1"/>
     </form>
   </div>
 </div></div>
       <div class="col mb-3"><div class="product-thumb">
-  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/white-leather-sneakers"><img src="image/cache/catalog/demo2/a111-200x200.jpg" alt="White Leather Sneakers" title="White Leather Sneakers" class="img-fluid"/></a></div>
+  <div class="image"><a href="p9412.html"><img src="image/cache/catalog/demo2/a111-200x200.jpg" alt="White Leather Sneakers" title="White Leather Sneakers" class="img-fluid"/></a></div>
   <div class="content">
     <div class="description">
-      <h4><a href="http://127.0.0.1:8083/en-gb/product/white-leather-sneakers">White Leather Sneakers</a></h4>
+      <h4><a href="p9412.html">White Leather Sneakers</a></h4>
       <p>Clean white leather sneakers with a low profile and tonal laces. Padded collar, removable insole and..</p>
               <div class="price">
                       <span class="price-new">89.00€</span>
                                 <span class="price-tax">Ex Tax: 89.00€</span>
                   </div>
                 </div>
-    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+    <form method="post" data-oc-toggle="ajax" data-oc-load="index.php?route=common/cart.info" data-oc-target="#cart">
       <div class="button">
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
-        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+        <button type="submit" formaction="index.php?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="index.php?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="index.php?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
       </div>
       <input type="hidden" name="product_id" value="9412"/> <input type="hidden" name="quantity" value="1"/>
     </form>
@@ -288,35 +288,35 @@
               <div class="col-sm-3">
           <h5>Information</h5>
           <ul class="list-unstyled">
-                                      <li><a href="http://127.0.0.1:8083/en-gb/information/terms">Terms &amp; Conditions</a></li>
-                          <li><a href="http://127.0.0.1:8083/en-gb/information/delivery">Delivery Information</a></li>
-                          <li><a href="http://127.0.0.1:8083/en-gb/information/about-us">About Us</a></li>
-                          <li><a href="http://127.0.0.1:8083/en-gb/information/privacy">Privacy Policy</a></li>
+                                      <li><a href="#demo-off">Terms &amp; Conditions</a></li>
+                          <li><a href="#demo-off">Delivery Information</a></li>
+                          <li><a href="#demo-off">About Us</a></li>
+                          <li><a href="#demo-off">Privacy Policy</a></li>
                       </ul>
         </div>
             <div class="col-sm-3">
         <h5>Customer Service</h5>
         <ul class="list-unstyled">
-          <li><a href="http://127.0.0.1:8083/en-gb?route=information/contact">Contact Us</a></li>
-          <li><a href="http://127.0.0.1:8083/en-gb?route=account/returns.add">Returns</a></li>
-                    <li><a href="http://127.0.0.1:8083/en-gb?route=information/sitemap">Site Map</a></li>
+          <li><a href="#demo-off">Contact Us</a></li>
+          <li><a href="#demo-off">Returns</a></li>
+                    <li><a href="#demo-off">Site Map</a></li>
         </ul>
       </div>
       <div class="col-sm-3">
         <h5>Extras</h5>
         <ul class="list-unstyled">
-          <li><a href="http://127.0.0.1:8083/en-gb/brands">Brands</a></li>
-                      <li><a href="http://127.0.0.1:8083/en-gb?route=account/affiliate">Affiliate</a></li>
-                    <li><a href="http://127.0.0.1:8083/en-gb?route=product/special">Specials</a></li>
+          <li><a href="#demo-off">Brands</a></li>
+                      <li><a href="#demo-off">Affiliate</a></li>
+                    <li><a href="#demo-off">Specials</a></li>
         </ul>
       </div>
       <div class="col-sm-3">
         <h5>My Account</h5>
         <ul class="list-unstyled">
-          <li><a href="http://127.0.0.1:8083/en-gb?route=account/account">My Account</a></li>
-          <li><a href="http://127.0.0.1:8083/en-gb?route=account/order">Order History</a></li>
-          <li><a href="http://127.0.0.1:8083/en-gb?route=account/wishlist">Wish List</a></li>
-          <li><a href="http://127.0.0.1:8083/en-gb?route=account/newsletter">Newsletter</a></li>
+          <li><a href="#demo-off">My Account</a></li>
+          <li><a href="#demo-off">Order History</a></li>
+          <li><a href="#demo-off">Wish List</a></li>
+          <li><a href="#demo-off">Newsletter</a></li>
         </ul>
       </div>
     </div>
