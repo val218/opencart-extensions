@@ -69,7 +69,7 @@
 			if (S.hints && S.hints.length) {
 				h += '<div class="th-small" style="margin-bottom:4px">Today\'s ' + esc(w[1]) + ':</div><ul class="th-hints">';
 				S.hints.forEach(function (x) {
-					h += '<li class="' + (x.found ? 'done' : '') + '">' + icon(S.theme) + '<span>' + (x.found ? 'Found' : an(w[0]) + esc(w[0]) + ' is hiding') + (x.where ? ' in <b>' + esc(x.where) + '</b>' : ' on a product page') + '</span></li>';
+					h += '<li class="' + (x.found ? 'done' : '') + '">' + icon(S.theme) + '<span>' + (x.found ? 'Found' : an(w[0]) + esc(w[0]) + ' is hiding') + (x.name ? ' on <b>' + esc(x.name) + '</b>' : (x.where ? ' in <b>' + esc(x.where) + '</b>' : ' on a product page') + (x.price ? ', ' + esc(x.price) : '')) + '</span></li>';
 				});
 				h += '</ul>';
 			}

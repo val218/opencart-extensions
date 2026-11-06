@@ -31,7 +31,7 @@
 <meta name="twitter:description" content="Clean white leather sneakers with a low profile and tonal laces. Padded collar, removable insole and a stitched rubber sole. The everyday shoe for jeans">
 <meta name="twitter:image" content="image/catalog/demo2/a111.jpg">
 </head>
-<body><div id="th-demo-note" style="background:#1d2329;color:#fff;font:14px/1.45 system-ui,sans-serif;padding:9px 16px;text-align:center"><b>Treasure Hunt demo</b> on a standard OpenCart 4 shop: 6 gold coins are hidden on product pages. Tap the coin button bottom left for hints, find them all and win a prize code. <a href="#" id="th-demo-reset" style="color:#f5c542">Start again</a> · Products are made up, nothing is sold.</div>
+<body><div id="th-demo-note" style="background:#1d2329;color:#fff;font:14px/1.45 system-ui,sans-serif;padding:9px 16px;text-align:center"><b>Treasure Hunt demo, easy mode:</b> 6 gold coins are hidden on product pages, 2 of them on products shown on the home page, and the hints (coin button, bottom left) name the category and price. In your shop you choose how hard it is. <a href="#" id="th-demo-reset" style="color:#f5c542">Start again</a> · Products are made up, nothing is sold.</div>
 <div id="container">
   <div id="alert"></div>
   <nav id="top">
@@ -257,7 +257,7 @@ $('#form-review').on('submit', function(e) {
     var element = this;
 
     $.ajax({
-        url: 'index.php?route=product/review.write&language=en-gb&review_token=1f726e54b4fc7ebf228133bfc3bf8819&product_id=9412',
+        url: 'index.php?route=product/review.write&language=en-gb&review_token=d0ee0a63076876c5616ffecf246feef4&product_id=9412',
         type: 'post',
         data: $('#form-review').serialize(),
         dataType: 'json',

@@ -1,6 +1,6 @@
 /* Treasure Hunt demo: plays the hunt in this browser (the real extension does this on the shop's server). */
 (function () {
-  var HIDE = {"9102": "Women", "9421": "Women", "9113": "Women", "9202": "Men", "9512": "Men", "9302": "Kids"}, GOAL = 6, KEY = 'th_demo_bf';
+  var HIDE = {"9103": ["Women", "priced 25\u20ac\u201350\u20ac"], "9201": ["Men", "priced 50\u20ac\u2013100\u20ac"], "9102": ["Women", "priced 50\u20ac\u2013100\u20ac"], "9512": ["Men", "priced 50\u20ac\u2013100\u20ac"], "9302": ["Kids", "priced 10\u20ac\u201325\u20ac"], "9421": ["Women", "priced 25\u20ac\u201350\u20ac"]}, GOAL = 6, KEY = 'th_demo_bf';
   function load() { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; } }
   function save(f) { try { localStorage.setItem(KEY, JSON.stringify(f)); } catch (e) {} }
   var mem = load();
@@ -9,11 +9,12 @@
     var f = found(), s = {name: 'Black Friday hunt', theme: 'coin', words: ['coin', 'coins', 'gold coin'], goal: GOAL, ends: '2026-11-30',
       prize: '20% off on orders over 50.00€', intro: 'Gold coins are hidden around the shop this week. Find 6 and win 20% off. Only 100 prizes!', position: 'left', guest: false, found: f.length};
     if (f.length >= GOAL) { s.won = {code: 'HUNTBF2026', until: '2026-12-14'}; return s; }
-    s.hints = Object.keys(HIDE).map(function (p) { return {where: HIDE[p], found: f.indexOf(+p) >= 0 ? 1 : 0}; });
+    s.hints = Object.keys(HIDE).map(function (p) { return {where: HIDE[p][0], price: HIDE[p][1], found: f.indexOf(+p) >= 0 ? 1 : 0}; });
     if (pid && HIDE[pid] && f.indexOf(pid) < 0) s.coin = {p: pid, k: 'demo', spot: pid % 6};
     return s;
   }
-  window.TH_STATE = state(window.TH_DEMO_PAGE || 0);
+  var pm = /\/p(\d+)\.html$/.exec(location.pathname);
+  window.TH_STATE = state(pm ? +pm[1] : 0);
   window.TH_CFG = {collect: 'th-collect', login: '#', register: '#'};
   var real = window.fetch ? window.fetch.bind(window) : null;
   window.fetch = function (u, o) {
