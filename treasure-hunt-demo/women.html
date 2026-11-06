@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Women</title>
+  
+      <meta name="description" content="Blouses, knitwear, jeans and a wrap dress, with hats, boots, sneakers and a belt. Press Try it on on any piece to mix it on the mannequin."/>
+      <script src="catalog/view/javascript/jquery/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <link href="catalog/view/stylesheet/bootstrap.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="catalog/view/stylesheet/fonts/fontawesome/css/all.min.css" rel="stylesheet" type="text/css"/>
+  <link href="catalog/view/stylesheet/stylesheet.css" type="text/css" rel="stylesheet"/>
+  <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+      <link rel="icon" href="image/catalog/opencart.ico" type="image/png">
+            <link href="http://127.0.0.1:8083/en-gb/catalog/women" rel="canonical"/>
+    <!-- SEO Pilot -->
+<meta name="robots" content="noindex, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Women">
+<meta property="og:description" content="Blouses, knitwear, jeans and a wrap dress, with hats, boots, sneakers and a belt. Press Try it on on any piece to mix it on the mannequin.">
+<meta property="og:url" content="http://127.0.0.1:8083/en-gb/catalog/women">
+<meta property="og:site_name" content="Atelier">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Women">
+<meta name="twitter:description" content="Blouses, knitwear, jeans and a wrap dress, with hats, boots, sneakers and a belt. Press Try it on on any piece to mix it on the mannequin.">
+</head>
+<body><div id="th-demo-note" style="background:#1d2329;color:#fff;font:14px/1.45 system-ui,sans-serif;padding:9px 16px;text-align:center"><b>Treasure Hunt demo</b> on a standard OpenCart 4 shop: 6 gold coins are hidden on product pages. Tap the coin button bottom left for hints, find them all and win a prize code. <a href="#" id="th-demo-reset" style="color:#f5c542">Start again</a> · Products are made up, nothing is sold.</div>
+<div id="container">
+  <div id="alert"></div>
+  <nav id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <ul class="list-inline">
+            <li class="list-inline-item me-3">  <form id="form-currency" action="http://127.0.0.1:8083/en-gb?route=common/currency.save" method="post" data-oc-toggle="ajax">
+    <div class="dropdown"><span role="button" data-bs-toggle="dropdown" class="dropdown-toggle"><strong>€</strong> <span class="d-none d-md-inline">Currency</span> <i class="fa-solid fa-caret-down"></i></span>
+      <ul class="dropdown-menu">
+                              <li><span role="button" data-code="EUR" class="dropdown-item">€ Euro</span></li>
+                                        <li><span role="button" data-code="GBP" class="dropdown-item">£ Pound Sterling</span></li>
+                                        <li><span role="button" data-code="USD" class="dropdown-item">$ US Dollar</span></li>
+                        </ul>
+    </div>
+    <input type="hidden" name="code" value=""/>
+    <input type="hidden" name="redirect" value="http://127.0.0.1:8083/en-gb/catalog/women?limit=25"/>
+  </form>
+</li>
+            <li class="list-inline-item"></li>
+          </ul>
+        </div>
+        <div class="col text-end">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="http://127.0.0.1:8083/en-gb?route=information/contact"><i class="fa-solid fa-phone"></i> <span class="d-none d-lg-inline">123456789</span></a></li>
+            <li class="list-inline-item">
+              <div class="dropdown">
+                <span role="button" class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-user"></i> <span class="d-none d-lg-inline">My Account</span> <i class="fa-solid fa-caret-down"></i></span>
+                <ul class="dropdown-menu dropdown-menu-right">
+                                      <li><a href="http://127.0.0.1:8083/en-gb?route=account/register" class="dropdown-item">Register</a></li>
+                    <li><a href="http://127.0.0.1:8083/en-gb?route=account/login" class="dropdown-item">Login</a></li>
+                                  </ul>
+              </div>
+            </li>
+            <li class="list-inline-item"><a href="http://127.0.0.1:8083/en-gb?route=account/wishlist" id="wishlist-total" title="Wish List (0)"><i class="fa-solid fa-heart"></i> <span class="d-none d-lg-inline">Wish List (0)</span></a></li>
+            <li class="list-inline-item"><a href="http://127.0.0.1:8083/en-gb?route=checkout/cart" title="Shopping Cart"><i class="fa-solid fa-cart-shopping"></i> <span class="d-none d-lg-inline">Shopping Cart</span></a></li>
+            <li class="list-inline-item"><a href="http://127.0.0.1:8083/en-gb?route=checkout/checkout" title="Checkout"><i class="fa-solid fa-share"></i> <span class="d-none d-lg-inline">Checkout</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-lg-4">
+          <div id="logo">
+                          <h1><a href="http://127.0.0.1:8083/en-gb?route=common/home">Atelier</a></h1>
+                      </div>
+        </div>
+        <div class="col-md-5"><form action="http://127.0.0.1:8083/en-gb?route=common/search.redirect" method="post" class="input-group mb-3">
+	<input type="text" name="search" value="" placeholder="Search" class="form-control form-control-lg"/>
+	<button type="submit" class="btn btn-light btn-lg"><i class="fa-solid fa-magnifying-glass"></i></button>
+</form>
+</div>
+        <div id="cart" class="col-md-4 col-lg-3 mb-2"><div class="dropdown d-grid">
+  <button type="button" data-bs-toggle="dropdown" class="btn btn-lg btn-dark d-block dropdown-toggle"><i class="fa-solid fa-cart-shopping"></i> 0 item(s) - 0.00€</button>
+  <ul class="dropdown-menu dropdown-menu-end p-2">
+          <li class="text-center p-4">Your shopping cart is empty!</li>
+      </ul>
+</div></div>
+      </div>
+    </div>
+  </header>
+  <main>
+      <div class="container">
+    <nav id="menu" class="navbar navbar-expand-lg bg-primary">
+      <div id="category" class="d-block d-sm-block d-lg-none">Categories</div>
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" class="navbar-toggler d-lg-none"><i class="fa-solid fa-bars"></i></button>
+      <div id="navbar-menu" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+                                    <li class="nav-item"><a href="http://127.0.0.1:8083/en-gb/catalog/women" class="dropdown-item">Women</a></li>
+                                                <li class="nav-item"><a href="http://127.0.0.1:8083/en-gb/catalog/men" class="dropdown-item">Men</a></li>
+                                                <li class="nav-item"><a href="http://127.0.0.1:8083/en-gb/catalog/kids" class="dropdown-item">Kids</a></li>
+                              </ul>
+      </div>
+    </nav>
+  </div>
+
+
+<div id="product-category" class="container">
+  <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="http://127.0.0.1:8083/en-gb?route=common/home"><i class="fas fa-home"></i></a></li>
+          <li class="breadcrumb-item"><a href="http://127.0.0.1:8083/en-gb/catalog/women?limit=25">Women</a></li>
+      </ul>
+  <div class="row"><aside id="column-left" class="col-3 d-none d-md-block">
+    <div class="list-group mb-3">
+            <a href="http://127.0.0.1:8083/en-gb/catalog/women" class="list-group-item active">Women (12)</a>
+                 <a href="http://127.0.0.1:8083/en-gb/catalog/men" class="list-group-item">Men (8)</a>
+           <a href="http://127.0.0.1:8083/en-gb/catalog/kids" class="list-group-item">Kids (4)</a>
+      </div>
+
+  </aside>
+
+    <div id="content" class="col">
+      <h1>Women</h1>
+              <div class="row">
+                                <div class="col-9">Blouses, knitwear, jeans and a wrap dress, with hats, boots, sneakers and a belt. Press <b>Try it on</b> on any piece to mix it on the mannequin.</div>
+                  </div>
+        <hr/>
+      
+      
+              <div class="row">
+          <div class="col-lg-3">
+            <div class="mb-3">
+              <a href="http://127.0.0.1:8083/en-gb?route=product/compare" id="compare-total" class="btn btn-primary d-block"><i class="fa-solid fa-arrow-right-arrow-left"></i> <span class="d-none d-xl-inline">Product Compare (0)</span></a>
+            </div>
+          </div>
+          <div class="col-lg-1 d-none d-lg-block">
+            <div class="btn-group">
+              <button type="button" id="button-list" class="btn btn-light" data-bs-toggle="tooltip" title="List"><i class="fa-solid fa-table-list"></i></button>
+              <button type="button" id="button-grid" class="btn btn-light" data-bs-toggle="tooltip" title="Grid"><i class="fa-solid fa-table-cells"></i></button>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 col-6">
+            <div class="input-group mb-3">
+              <label for="input-sort" class="input-group-text">Sort By</label>
+              <select id="input-sort" class="form-select" onchange="location = this.value;">
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?sort=p.sort_order&amp;order=ASC&amp;limit=25" selected>Default</option>
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?sort=pd.name&amp;order=ASC&amp;limit=25">Name (A - Z)</option>
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?sort=pd.name&amp;order=DESC&amp;limit=25">Name (Z - A)</option>
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?sort=p.price&amp;order=ASC&amp;limit=25">Price (Low &gt; High)</option>
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?sort=p.price&amp;order=DESC&amp;limit=25">Price (High &gt; Low)</option>
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?sort=rating&amp;order=DESC&amp;limit=25">Rating (Highest)</option>
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?sort=rating&amp;order=ASC&amp;limit=25">Rating (Lowest)</option>
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?sort=p.model&amp;order=ASC&amp;limit=25">Model (A - Z)</option>
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?sort=p.model&amp;order=DESC&amp;limit=25">Model (Z - A)</option>
+                              </select>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="input-group mb-3">
+              <label for="input-limit" class="input-group-text">Show</label>
+              <select id="input-limit" class="form-select" onchange="location = this.value;">
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?limit=10">10</option>
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?limit=25" selected>25</option>
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?limit=50">50</option>
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?limit=75">75</option>
+                                  <option value="http://127.0.0.1:8083/en-gb/catalog/women?limit=100">100</option>
+                              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="product-list" class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+                      <div class="col mb-3"><div class="product-thumb">
+  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/black-ankle-boots/women?limit=25"><img src="image/cache/catalog/demo2/a110-250x250.jpg" alt="Black Ankle Boots" title="Black Ankle Boots" class="img-fluid"/></a></div>
+  <div class="content">
+    <div class="description">
+      <h4><a href="http://127.0.0.1:8083/en-gb/product/black-ankle-boots/women?limit=25">Black Ankle Boots</a></h4>
+      <p>Black leather ankle boots with a slim block heel and a side zip. The pointed toe lengthens the leg u..</p>
+              <div class="price">
+                      <span class="price-new">120.00€</span>
+                                <span class="price-tax">Ex Tax: 120.00€</span>
+                  </div>
+                </div>
+    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+      <div class="button">
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+      <input type="hidden" name="product_id" value="9411"/> <input type="hidden" name="quantity" value="1"/>
+    </form>
+  </div>
+</div></div>
+                      <div class="col mb-3"><div class="product-thumb">
+  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/black-tailored-trousers/women?limit=25"><img src="image/cache/catalog/demo2/w-trousers-250x250.png" alt="Black Tailored Trousers" title="Black Tailored Trousers" class="img-fluid"/></a></div>
+  <div class="content">
+    <div class="description">
+      <h4><a href="http://127.0.0.1:8083/en-gb/product/black-tailored-trousers/women?limit=25">Black Tailored Trousers</a></h4>
+      <p>Slim black trousers with a pressed crease and a high waist. The stretch wool blend keeps them smooth..</p>
+              <div class="price">
+                      <span class="price-new">89.00€</span>
+                                <span class="price-tax">Ex Tax: 89.00€</span>
+                  </div>
+                </div>
+    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+      <div class="button">
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+      <input type="hidden" name="product_id" value="9111"/> <input type="hidden" name="quantity" value="1"/>
+    </form>
+  </div>
+</div></div>
+                      <div class="col mb-3"><div class="product-thumb">
+  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/black-wool-beret/women?limit=25"><img src="image/cache/catalog/demo2/a101-250x250.jpg" alt="Black Wool Beret" title="Black Wool Beret" class="img-fluid"/></a></div>
+  <div class="content">
+    <div class="description">
+      <h4><a href="http://127.0.0.1:8083/en-gb/product/black-wool-beret/women?limit=25">Black Wool Beret</a></h4>
+      <p>A soft black beret in boiled wool. Wear it pulled to one side or straight back; it folds into a pock..</p>
+              <div class="price">
+                      <span class="price-new">29.00€</span>
+                                <span class="price-tax">Ex Tax: 29.00€</span>
+                  </div>
+                </div>
+    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+      <div class="button">
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+      <input type="hidden" name="product_id" value="9402"/> <input type="hidden" name="quantity" value="1"/>
+    </form>
+  </div>
+</div></div>
+                      <div class="col mb-3"><div class="product-thumb">
+  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/breton-striped-top/women?limit=25"><img src="image/cache/catalog/demo2/w-breton-250x250.jpg" alt="Breton Striped Top" title="Breton Striped Top" class="img-fluid"/></a></div>
+  <div class="content">
+    <div class="description">
+      <h4><a href="http://127.0.0.1:8083/en-gb/product/breton-striped-top/women?limit=25">Breton Striped Top</a></h4>
+      <p>The classic Breton top in heavy cotton jersey with navy stripes and a wide boat neck. Slightly cropp..</p>
+              <div class="price">
+                      <span class="price-new">39.00€</span>
+                                <span class="price-tax">Ex Tax: 39.00€</span>
+                  </div>
+                </div>
+    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+      <div class="button">
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+      <input type="hidden" name="product_id" value="9103"/> <input type="hidden" name="quantity" value="1"/>
+    </form>
+  </div>
+</div></div>
+                      <div class="col mb-3"><div class="product-thumb">
+  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/camel-felt-fedora/women?limit=25"><img src="image/cache/catalog/demo2/a100-250x250.jpg" alt="Camel Felt Fedora" title="Camel Felt Fedora" class="img-fluid"/></a></div>
+  <div class="content">
+    <div class="description">
+      <h4><a href="http://127.0.0.1:8083/en-gb/product/camel-felt-fedora/women?limit=25">Camel Felt Fedora</a></h4>
+      <p>A camel felt fedora in pure wool with a dark grosgrain band. The medium brim shades without hiding y..</p>
+              <div class="price">
+                      <span class="price-new">45.00€</span>
+                                <span class="price-tax">Ex Tax: 45.00€</span>
+                  </div>
+                </div>
+    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+      <div class="button">
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+      <input type="hidden" name="product_id" value="9401"/> <input type="hidden" name="quantity" value="1"/>
+    </form>
+  </div>
+</div></div>
+                      <div class="col mb-3"><div class="product-thumb">
+  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/camel-fine-knit-sweater/women?limit=25"><img src="image/cache/catalog/demo2/w-sweater-250x250.png" alt="Camel Fine-Knit Sweater" title="Camel Fine-Knit Sweater" class="img-fluid"/></a></div>
+  <div class="content">
+    <div class="description">
+      <h4><a href="http://127.0.0.1:8083/en-gb/product/camel-fine-knit-sweater/women?limit=25">Camel Fine-Knit Sweater</a></h4>
+      <p>A camel crew-neck sweater knitted from fine merino wool. Warm without bulk, it sits at the hip and w..</p>
+              <div class="price">
+                      <span class="price-new">69.00€</span>
+                                <span class="price-tax">Ex Tax: 69.00€</span>
+                  </div>
+                </div>
+    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+      <div class="button">
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+      <input type="hidden" name="product_id" value="9102"/> <input type="hidden" name="quantity" value="1"/>
+    </form>
+  </div>
+</div></div>
+                      <div class="col mb-3"><div class="product-thumb">
+  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/cognac-leather-belt/women?limit=25"><img src="image/cache/catalog/demo2/a121-250x250.jpg" alt="Cognac Leather Belt" title="Cognac Leather Belt" class="img-fluid"/></a></div>
+  <div class="content">
+    <div class="description">
+      <h4><a href="http://127.0.0.1:8083/en-gb/product/cognac-leather-belt/women?limit=25">Cognac Leather Belt</a></h4>
+      <p>A cognac leather belt with a brushed brass buckle, cut from one piece of vegetable-tanned leather. I..</p>
+              <div class="price">
+                      <span class="price-new">39.00€</span>
+                                <span class="price-tax">Ex Tax: 39.00€</span>
+                  </div>
+                </div>
+    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+      <div class="button">
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+      <input type="hidden" name="product_id" value="9421"/> <input type="hidden" name="quantity" value="1"/>
+    </form>
+  </div>
+</div></div>
+                      <div class="col mb-3"><div class="product-thumb">
+  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/ivory-silk-blouse/women?limit=25"><img src="image/cache/catalog/demo2/w-blouse-250x250.png" alt="Ivory Silk Blouse" title="Ivory Silk Blouse" class="img-fluid"/></a></div>
+  <div class="content">
+    <div class="description">
+      <h4><a href="http://127.0.0.1:8083/en-gb/product/ivory-silk-blouse/women?limit=25">Ivory Silk Blouse</a></h4>
+      <p>A fluid ivory blouse in washable silk with a soft tie at the neck. It drapes lightly over the hips, ..</p>
+              <div class="price">
+                      <span class="price-new">79.00€</span>
+                                <span class="price-tax">Ex Tax: 79.00€</span>
+                  </div>
+                </div>
+    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+      <div class="button">
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+      <input type="hidden" name="product_id" value="9101"/> <input type="hidden" name="quantity" value="1"/>
+    </form>
+  </div>
+</div></div>
+                      <div class="col mb-3"><div class="product-thumb">
+  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/light-wash-mom-jeans/women?limit=25"><img src="image/cache/catalog/demo2/w-momjeans-250x250.png" alt="Light Wash Mom Jeans" title="Light Wash Mom Jeans" class="img-fluid"/></a></div>
+  <div class="content">
+    <div class="description">
+      <h4><a href="http://127.0.0.1:8083/en-gb/product/light-wash-mom-jeans/women?limit=25">Light Wash Mom Jeans</a></h4>
+      <p>Light-wash mom jeans in rigid cotton denim with a high waist and a relaxed, tapered leg. They soften..</p>
+              <div class="price">
+                      <span class="price-new">75.00€</span>
+                                <span class="price-tax">Ex Tax: 75.00€</span>
+                  </div>
+                </div>
+    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+      <div class="button">
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+      <input type="hidden" name="product_id" value="9112"/> <input type="hidden" name="quantity" value="1"/>
+    </form>
+  </div>
+</div></div>
+                      <div class="col mb-3"><div class="product-thumb">
+  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/navy-floral-wrap-dress/women?limit=25"><img src="image/cache/catalog/demo2/w-dress-250x250.jpg" alt="Navy Floral Wrap Dress" title="Navy Floral Wrap Dress" class="img-fluid"/></a></div>
+  <div class="content">
+    <div class="description">
+      <h4><a href="http://127.0.0.1:8083/en-gb/product/navy-floral-wrap-dress/women?limit=25">Navy Floral Wrap Dress</a></h4>
+      <p>A navy wrap dress with a small white floral print, tied at the waist so it fits many shapes. The V n..</p>
+              <div class="price">
+                      <span class="price-new">99.00€</span>
+                                <span class="price-tax">Ex Tax: 99.00€</span>
+                  </div>
+                </div>
+    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+      <div class="button">
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+      <input type="hidden" name="product_id" value="9121"/> <input type="hidden" name="quantity" value="1"/>
+    </form>
+  </div>
+</div></div>
+                      <div class="col mb-3"><div class="product-thumb">
+  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/sage-pleated-midi-skirt/women?limit=25"><img src="image/cache/catalog/demo2/w-skirt-250x250.png" alt="Sage Pleated Midi Skirt" title="Sage Pleated Midi Skirt" class="img-fluid"/></a></div>
+  <div class="content">
+    <div class="description">
+      <h4><a href="http://127.0.0.1:8083/en-gb/product/sage-pleated-midi-skirt/women?limit=25">Sage Pleated Midi Skirt</a></h4>
+      <p>A sage-green midi skirt with fine knife pleats that move as you walk. Elastic at the back of the wai..</p>
+              <div class="price">
+                      <span class="price-new">65.00€</span>
+                                <span class="price-tax">Ex Tax: 65.00€</span>
+                  </div>
+                </div>
+    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+      <div class="button">
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+      <input type="hidden" name="product_id" value="9113"/> <input type="hidden" name="quantity" value="1"/>
+    </form>
+  </div>
+</div></div>
+                      <div class="col mb-3"><div class="product-thumb">
+  <div class="image"><a href="http://127.0.0.1:8083/en-gb/product/white-leather-sneakers/women?limit=25"><img src="image/cache/catalog/demo2/a111-250x250.jpg" alt="White Leather Sneakers" title="White Leather Sneakers" class="img-fluid"/></a></div>
+  <div class="content">
+    <div class="description">
+      <h4><a href="http://127.0.0.1:8083/en-gb/product/white-leather-sneakers/women?limit=25">White Leather Sneakers</a></h4>
+      <p>Clean white leather sneakers with a low profile and tonal laces. Padded collar, removable insole and..</p>
+              <div class="price">
+                      <span class="price-new">89.00€</span>
+                                <span class="price-tax">Ex Tax: 89.00€</span>
+                  </div>
+                </div>
+    <form method="post" data-oc-toggle="ajax" data-oc-load="http://127.0.0.1:8083/en-gb?route=common/cart.info" data-oc-target="#cart">
+      <div class="button">
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=checkout/cart.add" data-bs-toggle="tooltip" title="Add to Cart"><i class="fa-solid fa-shopping-cart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=account/wishlist.add" data-bs-toggle="tooltip" title="Add to Wish List" ><i class="fa-solid fa-heart"></i></button>
+        <button type="submit" formaction="http://127.0.0.1:8083/en-gb?route=product/compare.add" data-bs-toggle="tooltip" title="Compare this Product"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+      </div>
+      <input type="hidden" name="product_id" value="9412"/> <input type="hidden" name="quantity" value="1"/>
+    </form>
+  </div>
+</div></div>
+                  </div>
+
+        <div class="row">
+          <div class="col-sm-6 text-start"></div>
+          <div class="col-sm-6 text-end">Showing 1 to 12 of 12 (1 Pages)</div>
+        </div>
+                  </div>
+    </div>
+</div>
+</main>
+<footer>
+  <div class="container">
+    <div class="row">
+              <div class="col-sm-3">
+          <h5>Information</h5>
+          <ul class="list-unstyled">
+                                      <li><a href="http://127.0.0.1:8083/en-gb/information/terms">Terms &amp; Conditions</a></li>
+                          <li><a href="http://127.0.0.1:8083/en-gb/information/delivery">Delivery Information</a></li>
+                          <li><a href="http://127.0.0.1:8083/en-gb/information/about-us">About Us</a></li>
+                          <li><a href="http://127.0.0.1:8083/en-gb/information/privacy">Privacy Policy</a></li>
+                      </ul>
+        </div>
+            <div class="col-sm-3">
+        <h5>Customer Service</h5>
+        <ul class="list-unstyled">
+          <li><a href="http://127.0.0.1:8083/en-gb?route=information/contact">Contact Us</a></li>
+          <li><a href="http://127.0.0.1:8083/en-gb?route=account/returns.add">Returns</a></li>
+                    <li><a href="http://127.0.0.1:8083/en-gb?route=information/sitemap">Site Map</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>Extras</h5>
+        <ul class="list-unstyled">
+          <li><a href="http://127.0.0.1:8083/en-gb/brands">Brands</a></li>
+                      <li><a href="http://127.0.0.1:8083/en-gb?route=account/affiliate">Affiliate</a></li>
+                    <li><a href="http://127.0.0.1:8083/en-gb?route=product/special">Specials</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>My Account</h5>
+        <ul class="list-unstyled">
+          <li><a href="http://127.0.0.1:8083/en-gb?route=account/account">My Account</a></li>
+          <li><a href="http://127.0.0.1:8083/en-gb?route=account/order">Order History</a></li>
+          <li><a href="http://127.0.0.1:8083/en-gb?route=account/wishlist">Wish List</a></li>
+          <li><a href="http://127.0.0.1:8083/en-gb?route=account/newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p>Powered By <a href="https://www.opencart.com">OpenCart</a><br/> Atelier &copy; 2026</p>
+    <!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+  </div>
+</footer>
+</div>
+
+<script src="catalog/view/javascript/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Atelier","item":"http://127.0.0.1:8083/en-gb?route=common/home"},{"@type":"ListItem","position":2,"name":"Women","item":"http://127.0.0.1:8083/en-gb/catalog/women?limit=25"}]}</script>
+<script>window.TH_DEMO_PAGE=9411;</script><script src="th/demo.js"></script><script src="th/icons.js"></script><script src="th/hunt.js"></script></body></html>
+
